@@ -12,6 +12,9 @@
 bin/
 gen/
 
+# API Keys
+res/values/keys.xml
+
 # Gradle files
 .gradle/
 build/
