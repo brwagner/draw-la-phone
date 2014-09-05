@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="brown">#993300</color>
+    <color name="orange">#FF7F00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#00FF00</color>
+    <color name="forrestgreen">#006600</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="azure">#007FFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="violet">#7F00FF</color>
+    <color name="magenta">#FF00FF</color>
+    <color name="paleblue">#ff97d6ff</color>
+    <color name="lighterblue">#ff50b8ff</color>
+    <color name="lightblue">#ff0085ff</color>
+    <color name="grey">#ffc0c0c0</color>
+    <color name="clear">#00000000</color>
+
+    <array name="rainbow">
+        <item>@color/white</item>
+        <item>@color/grey</item>
+        <item>@color/black</item>
+        <item>@color/red</item>
+        <item>@color/brown</item>
+        <item>@color/orange</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+        <item>@color/forrestgreen</item>
+        <item>@color/cyan</item>
+        <item>@color/azure</item>
+        <item>@color/blue</item>
+        <item>@color/violet</item>
+        <item>@color/magenta</item>
+    </array>
+</resources>

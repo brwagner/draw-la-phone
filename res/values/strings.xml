@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Draw La Phone</string>
+    <string name="action_settings">Settings</string>
+    <string name="interpreted_image">interpreted_image</string>
+    <string name="join">Join</string>
+    <string name="host">Host</string>
+    <string name="host_game_name">Game Name:</string>
+    <string name="host_num_players">Number of Players:</string>
+    <string name="host_start">Open Lobby</string>
+    <string name="host_instructions">When you\'re ready, press this button to allow other players to join your game :-)</string>
+    <string name="login_signup_username_text">Username:</string>
+    <string name="login_signup_password_text">Password:</string>
+    <string name="login_instructions_1">Login to Draw La Phone</string>
+    <string name="login_instructions_2">Don\'t have an account?</string>
+    <string name="login_sign_up_text">Sign Up</string>
+    <string name="host_suggested_players">3</string>
+    <string name="login_login_text">Login</string>
+    <string name="signup_create_account">Create Account</string>
+    <string name="signup_password2_text">Confirm Password</string>
+    <string name="signup_instructions_1">Sign up for Draw La Phone</string>
+    <string name="menu_log_out">Log Out</string>
+    <string name="main_current_games">Current</string>
+    <string name="main_your_turn">Your Move</string>
+    <string name="draw_menu_done">DONE!!</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="write_instructions_content">What even is this?</string>
+    <string name="write_instructions_success">Start the game off with a word or phrase!\n\nSomething really rad preferably.\n\nBe as creative as you can.</string>
+    <string name="write_instructions_hint">Your guess</string>
+    <string name="draw_instructions_success">Draw a thing!</string>
+    <string name="draw_instructions_fail">Loading phrase failed</string>
+    <string name="host_number_rounds">Number of Rounds:</string>
+    <string name="host_suggested_rounds">3</string>
+    <string name="main_complete_games">Complete</string>
+    <string name="title_activity_complete_game">CompleteGameActivity</string>
+    <string name="smile_or_frown">smiley or frowney face</string>
+    <string name="main_frown">No games for you.</string>
+    <string name="main_smile">Oh look, games!!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_more">More</string>
+    <string name="title_activity_friends">FriendsActivity</string>
+    <string name="menu_friends">My Friends</string>
+    <string name="friend_item_accept">Accept</string>
+    <string name="menu_search">Search</string>
+    <string name="friend_item_decline">Decline</string>
+    <string name="search">Search</string>
+    <string name="join_go_look">Go search for some games</string>
+
+</resources>
