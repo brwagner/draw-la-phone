@@ -10,32 +10,39 @@ import android.widget.EditText;
 import com.bwjfstudios.drawlaphone.R;
 import com.bwjfstudios.drawlaphone.activity.AActivity;
 import com.bwjfstudios.drawlaphone.activity.main.MainActivity;
-import com.bwjfstudios.drawlaphone.activity.signup.SignupActivity;
+import com.bwjfstudios.drawlaphone.activity.signup.SignUpActivity;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 
+/**
+ * Initial screen used to login to the app
+ */
 public class LoginActivity extends AActivity {
 
-    private EditText usernameField;
-    private EditText passwordField;
-    private Button loginButton;
-    private Button signupButton;
+    private EditText usernameField; // Enter username
+    private EditText passwordField; // Enter password
+    private Button logInButton; // Logs user in if username and password mathc
+    private Button signUpButton; // Goes to signUp activity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        // Assign fields
         this.usernameField = (EditText) this.findViewById(R.id.login_username_field);
         this.passwordField = (EditText) this.findViewById(R.id.login_password_field);
-        this.loginButton = (Button) this.findViewById(R.id.login_login_button);
-        this.signupButton = (Button) this.findViewById(R.id.login_signup_button);
+        this.logInButton = (Button) this.findViewById(R.id.login_login_button);
+        this.signUpButton = (Button) this.findViewById(R.id.login_signup_button);
 
+        // Automatic login
         this.initAuthentication();
+
+        // Set up UI if login fails
         this.initUI();
     }
 
-    // Parse black magic that logs the user in
+    // Attempt to log the user in
     private void initAuthentication() {
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser != null) {
@@ -49,24 +56,25 @@ public class LoginActivity extends AActivity {
     // Opens the screen
     private void initUI() {
         initLoginButton();
-        initSignupButton();
+        initSignUpButton();
     }
 
-    // Create an Account button for chumps without an account
-    private void initSignupButton() {
-        this.signupButton.setOnClickListener(new OnClickListener() {
+    // Create an Account button for users without an account
+    private void initSignUpButton() {
+        this.signUpButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                animateViewSuccess(signupButton);
-                Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
+                // Go to the sign up activity
+                animateViewSuccess(signUpButton);
+                Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
                 startActivity(intent);
             }
         });
     }
 
-    // Sign in button for winners
+    // Sign in button for users with an account
     private void initLoginButton() {
-        this.loginButton.setOnClickListener(new OnClickListener() {
+        this.logInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 startLoginAttempt();
@@ -76,14 +84,17 @@ public class LoginActivity extends AActivity {
 
     // Handles logging on
     private void startLoginAttempt() {
+        // Get username and password
         final String username = this.usernameField.getText().toString();
         final String password = this.passwordField.getText().toString();
 
+        // Check if username and password were entered
         if (this.isEmpty(username, password)) {
-            animateViewFail(loginButton);
-            makeText("Please enter both username and password");
+            animateViewFail(logInButton);
+            makeText("Please enter username and password");
         } else {
-            animateViewSuccess(loginButton);
+            animateViewSuccess(logInButton);
+            // Log user in in background
             getSingletonThread().startThread(new Runnable() {
                 @Override
                 public void run() {
@@ -93,6 +104,7 @@ public class LoginActivity extends AActivity {
         }
     }
 
+    // Validate user
     private void finishLoginAttempt(String username, String password) {
         try {
             ParseUser.logIn(username, password);
@@ -105,7 +117,7 @@ public class LoginActivity extends AActivity {
         }
     }
 
-    // Does literally exactly what you would think it would do in this context
+    // Checks if either username or password are empty
     private boolean isEmpty(String username, String password) {
         return username.length() == 0 || password.length() == 0;
     }

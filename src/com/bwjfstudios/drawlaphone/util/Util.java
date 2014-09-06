@@ -12,31 +12,37 @@ import com.bwjfstudios.drawlaphone.R;
 import java.util.ArrayList;
 import java.util.List;
 
-// Damn, this is a useful util class
+/**
+ * Static methods that I couldn't really find a place for anywhere else
+ */
 public class Util {
 
+    // Fade in animation
     public static Animation getFadeIn(int time) {
         Animation animation = new AlphaAnimation(0, 1);
-        animation.setInterpolator(new DecelerateInterpolator()); //add this
+        animation.setInterpolator(new DecelerateInterpolator());
         animation.setDuration(time);
         return animation;
     }
 
+    // Success animation
     public static Animation getSuccessAnim() {
         return getFadeIn(500);
     }
 
+    // Fail animation (Uses resource instead of programmatic generation)
     public static Animation getFailAnim(Context context) {
         return AnimationUtils.loadAnimation(context, R.anim.wobble);
     }
 
-     public static <E> List<E> filter(List<E> list, Predicate<E> predicate) {
-         List<E> result = new ArrayList<E>();
-         for (E e: list) {
-             if(predicate.apply(e)) {
-                 result.add(e);
-             }
-         }
-         return result;
-     }
+    // Basic filter method I wrote myself
+    public static <E> List<E> filter(List<E> list, Predicate<E> predicate) {
+        List<E> result = new ArrayList<E>();
+        for (E e : list) {
+            if (predicate.apply(e)) {
+                result.add(e);
+            }
+        }
+        return result;
+    }
 }

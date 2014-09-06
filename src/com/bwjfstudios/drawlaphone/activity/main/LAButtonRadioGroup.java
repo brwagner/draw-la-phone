@@ -10,6 +10,10 @@ import com.bwjfstudios.drawlaphone.util.GameArrayAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Simple radio button selector used in the main activity to alternate between different lists of games
+ * LA stands for Listener Adapter
+ */
 class LAButtonRadioGroup {
     private List<LAButton> LAButtons;
     private int selected;

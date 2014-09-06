@@ -5,6 +5,9 @@ import android.widget.Button;
 
 import com.bwjfstudios.drawlaphone.util.GameArrayAdapter;
 
+/**
+ * Structure representing a button paired with a game adapter and a listener
+ */
 class LAButton {
     private AdapterView.OnItemClickListener listener;
     private GameArrayAdapter adapter;

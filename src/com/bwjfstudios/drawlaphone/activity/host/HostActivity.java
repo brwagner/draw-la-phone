@@ -16,34 +16,37 @@ import com.parse.ParseObject;
 import com.parse.ParseRelation;
 import com.parse.ParseUser;
 
+/**
+ * Screen used by Users to create games
+ */
 public class HostActivity extends AActivity {
 
-    private EditText nameField;
-    private SliderTextView numPlayers;
-    private SliderTextView numRounds;
-    private Button startButton;
+    private EditText nameField; // Game name used for searching purposes
+    private SliderTextView numPlayers; // Max number of players in game
+    private SliderTextView numRounds; // Max number of rounds in game
+    private Button startButton; // Creates the game
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_host);
 
+        // Assign fields
         this.nameField = (EditText) this.findViewById(R.id.host_game_name_field);
-
         this.numPlayers = new OddSliderTextView(
                 (TextView) this.findViewById(R.id.host_number_players_int),
                 (SeekBar) this.findViewById(R.id.host_number_players_bar)
         );
-
         this.numRounds = new SliderTextView(
                 (TextView) this.findViewById(R.id.host_number_rounds_int),
                 (SeekBar) this.findViewById(R.id.host_number_rounds_bar)
         );
-
         this.startButton = (Button) this.findViewById(R.id.host_start_button);
 
+        // Initializes UI
         this.initUI();
     }
 
+    // Sets up UI elements
     private void initUI() {
         this.initNameField();
         this.numPlayers.init();
@@ -51,10 +54,12 @@ public class HostActivity extends AActivity {
         this.initStartButton();
     }
 
+    // Sets default text for game
     private void initNameField() {
         this.nameField.setText(ParseUser.getCurrentUser().getUsername() + "'s game");
     }
 
+    // Sets default behaviour for button
     private void initStartButton() {
         this.startButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -65,6 +70,7 @@ public class HostActivity extends AActivity {
         });
     }
 
+    // Try to set up a game in the background
     private Runnable attemptHosting() {
         return new Runnable() {
             @Override
@@ -79,8 +85,9 @@ public class HostActivity extends AActivity {
         };
     }
 
+    // Creates starting information required for a Game to function
     private void startGame() throws ParseException {
-
+        // Make a new Game
         ParseObject game = new ParseObject("Game");
 
         // Game Name field at top of screen
@@ -119,14 +126,13 @@ public class HostActivity extends AActivity {
         game.put("wordCount", 0);
         game.put("pictureCount", 0);
 
-
-
-        // makes games public
+        // Makes games public
         ParseACL gameACL = new ParseACL();
         gameACL.setPublicReadAccess(true);
         gameACL.setPublicWriteAccess(true);
         game.setACL(gameACL);
 
+        // Saves the game in the Parse cloud
         game.save();
     }
 }

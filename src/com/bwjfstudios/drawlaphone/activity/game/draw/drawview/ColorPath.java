@@ -2,9 +2,10 @@ package com.bwjfstudios.drawlaphone.activity.game.draw.drawview;
 
 import android.graphics.Path;
 
-// Color stuff! Benno did this, he'll tell me about it later but everything looks like default stuff
+/**
+ * Structure defining a user-drawn line with a given size, color, and path
+ */
 class ColorPath {
-
     private int size;
     private int color;
     private Path path;
@@ -14,6 +15,10 @@ class ColorPath {
         this.color = color;
         this.path = path;
     }
+
+/////////////////////////////////////////////////////////////////////////////
+//                        Setters and Getters
+/////////////////////////////////////////////////////////////////////////////
 
     public int getSize() {
         return size;

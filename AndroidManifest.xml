@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.signup.SignupActivity"
+            android:name=".activity.signup.SignUpActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.game.draw.DrawActivity"
@@ -46,9 +46,6 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.complete.CompleteGameActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.friends.FriendsActivity"
             android:screenOrientation="portrait" />
     </application>
 

@@ -6,6 +6,9 @@ import com.bwjfstudios.drawlaphone.R;
 import com.parse.Parse;
 import com.parse.ParseACL;
 
+/**
+ * Sets up the app to use the Parse API
+ */
 public class DrawLaPhoneApp extends Application {
 
     @Override
