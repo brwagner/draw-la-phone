@@ -11,16 +11,16 @@ import com.parse.ParseACL;
  */
 public class DrawLaPhoneApp extends Application {
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
+  @Override
+  public void onCreate() {
+    super.onCreate();
 
-        // Add your initialization code here
-        Parse.initialize(this, getString(R.string.APPLICATION_ID), getString(R.string.CLIENT_KEY));
+    // Add your initialization code here
+    Parse.initialize(this, getString(R.string.APPLICATION_ID), getString(R.string.CLIENT_KEY));
 
-        // If you would like all objects to be private by default, remove this line.
-        ParseACL defaultACL = new ParseACL();
-        defaultACL.setPublicReadAccess(true);
-        ParseACL.setDefaultACL(defaultACL, true);
-    }
+    // If you would like all objects to be private by default, remove this line.
+    ParseACL defaultACL = new ParseACL();
+    defaultACL.setPublicReadAccess(true);
+    ParseACL.setDefaultACL(defaultACL, true);
+  }
 }

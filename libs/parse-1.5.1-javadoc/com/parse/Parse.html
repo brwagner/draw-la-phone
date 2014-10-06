@@ -11,13 +11,11 @@
     <LINK REL="stylesheet" TYPE="text/css" HREF="../../style.css" TITLE="Style">
 
     <SCRIPT type="text/javascript">
-function windowTitle()
-{
-    if (location.href.indexOf('is-external=true') == -1) {
-        parent.document.title="Parse";
-    }
-}
-
+        function windowTitle() {
+            if (location.href.indexOf('is-external=true') == -1) {
+                parent.document.title = "Parse";
+            }
+        }
     </SCRIPT>
     <NOSCRIPT>
     </NOSCRIPT>
@@ -46,9 +44,8 @@ function windowTitle()
                             CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="package-tree.html"><FONT
                             CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
-                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;
-                    </TD>
+                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../deprecated-list.html"><FONT
+                            CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../index-all.html"><FONT
                             CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../help-doc.html"><FONT
@@ -72,12 +69,11 @@ function windowTitle()
             &nbsp;<A HREF="Parse.html" target="_top"><B>NO FRAMES</B></A> &nbsp;
             &nbsp;
             <SCRIPT type="text/javascript">
-  <!--
-  if(window==top) {
-    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
-  }
-  //-->
-
+                <!--
+                if (window == top) {
+                    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
+                }
+                //-->
             </SCRIPT>
             <NOSCRIPT>
                 <A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>
@@ -219,7 +215,8 @@ function windowTitle()
     <TR BGCOLOR="white" CLASS="TableRowColor">
         <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
             <CODE>static&nbsp;int</CODE></FONT></TD>
-        <TD><CODE><B><A HREF="../../com/parse/Parse.html#getLogLevel()">getLogLevel</A></B>()</CODE>
+        <TD><CODE><B><A
+                HREF="../../com/parse/Parse.html#getLogLevel()">getLogLevel</A></B>()</CODE>
 
             <BR>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the level of logging
@@ -242,8 +239,8 @@ function windowTitle()
                title="class or interface in java.lang">String</A>&nbsp;clientKey)</CODE>
 
             <BR>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Authenticates this client as
-            belonging to your application.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Authenticates this client
+            as belonging to your application.
         </TD>
     </TR>
     <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -252,8 +249,8 @@ function windowTitle()
         <TD><CODE><B><A HREF="../../com/parse/Parse.html#setLogLevel(int)">setLogLevel</A></B>(int&nbsp;logLevel)</CODE>
 
             <BR>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the level of logging to
-            display, where each level includes all those below it.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the level of logging
+            to display, where each level includes all those below it.
         </TD>
     </TR>
 </TABLE>
@@ -465,7 +462,8 @@ public static void <B>enableLocalDatastore</B>(<A target="_top"
     <DD>Enable pinning in your application. This must be called before your application can use
         pinning. The recommended way is to put a call to <code>Parse.enableLocalDatastore</code> in
         your
-        <code>Application</code>'s <code>onCreate</code> method before <code>Parse.initialize</code>.
+        <code>Application</code>'s <code>onCreate</code> method before
+        <code>Parse.initialize</code>.
         An example:
 
  <pre>
@@ -498,12 +496,12 @@ public static void <B>setLogLevel</B>(int&nbsp;logLevel)</PRE>
         level is <A
                 HREF="../../com/parse/Parse.html#LOG_LEVEL_ERROR"><CODE>Parse.LOG_LEVEL_ERROR</CODE></A>.
         Please ensure this is set to <A HREF="../../com/parse/Parse.html#LOG_LEVEL_ERROR"><CODE>Parse.LOG_LEVEL_ERROR</CODE></A>
-        or <A HREF="../../com/parse/Parse.html#LOG_LEVEL_NONE"><CODE>Parse.LOG_LEVEL_NONE</CODE></A>
+        or
+        <A HREF="../../com/parse/Parse.html#LOG_LEVEL_NONE"><CODE>Parse.LOG_LEVEL_NONE</CODE></A>
         before deploying your app to ensure no sensitive information is
         logged. The levels are:
         <ul>
-            <li>
-                <A HREF="../../com/parse/Parse.html#LOG_LEVEL_VERBOSE"><CODE>Parse.LOG_LEVEL_VERBOSE</CODE></A>
+            <li><A HREF="../../com/parse/Parse.html#LOG_LEVEL_VERBOSE"><CODE>Parse.LOG_LEVEL_VERBOSE</CODE></A>
             </li>
             <li>
                 <A HREF="../../com/parse/Parse.html#LOG_LEVEL_DEBUG"><CODE>Parse.LOG_LEVEL_DEBUG</CODE></A>
@@ -511,8 +509,7 @@ public static void <B>setLogLevel</B>(int&nbsp;logLevel)</PRE>
             <li>
                 <A HREF="../../com/parse/Parse.html#LOG_LEVEL_INFO"><CODE>Parse.LOG_LEVEL_INFO</CODE></A>
             </li>
-            <li>
-                <A HREF="../../com/parse/Parse.html#LOG_LEVEL_WARNING"><CODE>Parse.LOG_LEVEL_WARNING</CODE></A>
+            <li><A HREF="../../com/parse/Parse.html#LOG_LEVEL_WARNING"><CODE>Parse.LOG_LEVEL_WARNING</CODE></A>
             </li>
             <li>
                 <A HREF="../../com/parse/Parse.html#LOG_LEVEL_ERROR"><CODE>Parse.LOG_LEVEL_ERROR</CODE></A>
@@ -570,9 +567,8 @@ public static int <B>getLogLevel</B>()</PRE>
                             CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="package-tree.html"><FONT
                             CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
-                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;
-                    </TD>
+                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../deprecated-list.html"><FONT
+                            CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../index-all.html"><FONT
                             CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../help-doc.html"><FONT
@@ -596,12 +592,11 @@ public static int <B>getLogLevel</B>()</PRE>
             &nbsp;<A HREF="Parse.html" target="_top"><B>NO FRAMES</B></A> &nbsp;
             &nbsp;
             <SCRIPT type="text/javascript">
-  <!--
-  if(window==top) {
-    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
-  }
-  //-->
-
+                <!--
+                if (window == top) {
+                    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
+                }
+                //-->
             </SCRIPT>
             <NOSCRIPT>
                 <A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>

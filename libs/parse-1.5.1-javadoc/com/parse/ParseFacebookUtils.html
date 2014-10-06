@@ -11,13 +11,11 @@
     <LINK REL="stylesheet" TYPE="text/css" HREF="../../style.css" TITLE="Style">
 
     <SCRIPT type="text/javascript">
-function windowTitle()
-{
-    if (location.href.indexOf('is-external=true') == -1) {
-        parent.document.title="ParseFacebookUtils";
-    }
-}
-
+        function windowTitle() {
+            if (location.href.indexOf('is-external=true') == -1) {
+                parent.document.title = "ParseFacebookUtils";
+            }
+        }
     </SCRIPT>
     <NOSCRIPT>
     </NOSCRIPT>
@@ -47,9 +45,8 @@ function windowTitle()
                     </TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="package-tree.html"><FONT
                             CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
-                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;
-                    </TD>
+                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../deprecated-list.html"><FONT
+                            CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../index-all.html"><FONT
                             CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../help-doc.html"><FONT
@@ -69,17 +66,16 @@ function windowTitle()
             &nbsp;<A HREF="../../com/parse/ParseFile.html" title="class in com.parse"><B>NEXT
             CLASS</B></A></FONT></TD>
         <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-            <A HREF="../../index.html?com/parse/ParseFacebookUtils.html" target="_top"><B>FRAMES</B></A>
-            &nbsp;
+            <A HREF="../../index.html?com/parse/ParseFacebookUtils.html"
+               target="_top"><B>FRAMES</B></A> &nbsp;
             &nbsp;<A HREF="ParseFacebookUtils.html" target="_top"><B>NO FRAMES</B></A> &nbsp;
             &nbsp;
             <SCRIPT type="text/javascript">
-  <!--
-  if(window==top) {
-    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
-  }
-  //-->
-
+                <!--
+                if (window == top) {
+                    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
+                }
+                //-->
             </SCRIPT>
             <NOSCRIPT>
                 <A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>
@@ -186,7 +182,8 @@ function windowTitle()
 <TR BGCOLOR="white" CLASS="TableRowColor">
     <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
         <CODE>static&nbsp;com.facebook.android.Facebook</CODE></FONT></TD>
-    <TD><CODE><B><A HREF="../../com/parse/ParseFacebookUtils.html#getFacebook()">getFacebook</A></B>()</CODE>
+    <TD><CODE><B><A
+            HREF="../../com/parse/ParseFacebookUtils.html#getFacebook()">getFacebook</A></B>()</CODE>
 
         <BR>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;</TD>
@@ -219,8 +216,8 @@ function windowTitle()
             HREF="../../com/parse/ParseUser.html" title="class in com.parse">ParseUser</A>&nbsp;user)</CODE>
 
         <BR>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns <code>true</code> if the
-        user is linked to a Facebook account.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns <code>true</code> if
+        the user is linked to a Facebook account.
     </TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -466,8 +463,8 @@ function windowTitle()
         <A HREF="../../com/parse/LogInCallback.html" title="class in com.parse">LogInCallback</A>&nbsp;callback)</CODE>
 
         <BR>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logs in a user using the default
-        activity code if single sign-on is enabled.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logs in a user using the
+        default activity code if single sign-on is enabled.
     </TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -510,8 +507,8 @@ function windowTitle()
         <A HREF="../../com/parse/SaveCallback.html" title="class in com.parse">SaveCallback</A>&nbsp;callback)</CODE>
 
         <BR>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saves the latest session data to
-        the user.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saves the latest session data
+        to the user.
     </TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -679,8 +676,8 @@ public static void <B>initialize</B>(<A target="_top"
 <DL>
     <DD>Initializes Facebook for use with Parse. Here, you can provide the set of permissions that
         will
-        be used when accessing Facebook, and toggle whether Facebook's single sign-on feature should
-        be
+        be used when accessing Facebook, and toggle whether Facebook's single sign-on feature
+        should be
         used when calling <A
                 HREF="../../com/parse/ParseFacebookUtils.html#logIn(android.app.Activity, int, com.parse.LogInCallback)"><CODE>ParseFacebookUtils.logIn(Activity,
             int, LogInCallback)</CODE></A> or
@@ -771,7 +768,8 @@ public static void <B>unlinkInBackground</B>(<A HREF="../../com/parse/ParseUser.
 </DL>
 <HR>
 
-<A NAME="link(com.parse.ParseUser, java.lang.String, java.lang.String, java.util.Date)"><!-- --></A>
+<A NAME="link(com.parse.ParseUser, java.lang.String, java.lang.String, java.util.Date)">
+    <!-- --></A>
 
 <H3>
     link</H3>
@@ -860,15 +858,16 @@ public static void <B>link</B>(<A HREF="../../com/parse/ParseUser.html" title="c
         providing access to Facebook data for the user. This method delegates to the Facebook SDK's
         <code>authenticate()</code> method.
         <p/>
-        <b>IMPORTANT:</b> Note that single sign-on authentication will not function correctly if you
-        do
+        <b>IMPORTANT:</b> Note that single sign-on authentication will not function correctly if
+        you do
         not include a call to the <code>finishAuthentication()</code> method in your
         onActivityResult()
         function! Please see below for more information.
         <p/>
         From the Facebook SDK documentation:
         <p/>
-        Starts either an Activity or a dialog which prompts the user to log in to Facebook and grant
+        Starts either an Activity or a dialog which prompts the user to log in to Facebook and
+        grant
         the requested permissions to the given application.
         <p/>
         This method will, when possible, use Facebook's single sign-on for Android to obtain an
@@ -878,8 +877,10 @@ public static void <B>link</B>(<A HREF="../../com/parse/ParseUser.html" title="c
         which will handle the authentication flow, and return an OAuth access token for making API
         calls.
         <p/>
-        Because this process will not be available for all users, if single sign-on is not possible,
-        this method will automatically fall back to the OAuth 2.0 User-Agent flow. In this flow, the
+        Because this process will not be available for all users, if single sign-on is not
+        possible,
+        this method will automatically fall back to the OAuth 2.0 User-Agent flow. In this flow,
+        the
         user credentials are handled by Facebook in an embedded WebView, not by the client
         application.
         As such, the dialog makes a network request and renders HTML content rather than a native
@@ -890,8 +891,8 @@ public static void <B>link</B>(<A HREF="../../com/parse/ParseUser.html" title="c
         <DL>
             <DT><B>Parameters:</B>
             <DD><CODE>user</CODE> - The user to link to a Facebook account.
-            <DD><CODE>permissions</CODE> - A list of permissions to be used when logging in. Many of
-                these constants are defined
+            <DD><CODE>permissions</CODE> - A list of permissions to be used when logging in. Many
+                of these constants are defined
                 here: <A HREF="../../com/parse/ParseFacebookUtils.Permissions.html"
                          title="class in com.parse"><CODE>ParseFacebookUtils.Permissions</CODE></A>.
             <DD><CODE>activity</CODE> - The Android activity in which we want to display the
@@ -1137,18 +1138,20 @@ public static void <B>logIn</B>(<A target="_top"
                          <A HREF="../../com/parse/LogInCallback.html" title="class in com.parse">LogInCallback</A>&nbsp;callback)</PRE>
 <DL>
     <DD>Logs in a ParseUser using Facebook for authentication. If a user for the given Facebook
-        credentials does not already exist, a new user will be created. This method delegates to the
+        credentials does not already exist, a new user will be created. This method delegates to
+        the
         Facebook SDK's <code>authenticate()</code> method.
         <p/>
-        <b>IMPORTANT:</b> Note that single sign-on authentication will not function correctly if you
-        do
+        <b>IMPORTANT:</b> Note that single sign-on authentication will not function correctly if
+        you do
         not include a call to the <code>finishAuthentication()</code> method in your
         onActivityResult()
         function! Please see below for more information.
         <p/>
         From the Facebook SDK documentation:
         <p/>
-        Starts either an Activity or a dialog which prompts the user to log in to Facebook and grant
+        Starts either an Activity or a dialog which prompts the user to log in to Facebook and
+        grant
         the requested permissions to the given application.
         <p/>
         This method will, when possible, use Facebook's single sign-on for Android to obtain an
@@ -1158,8 +1161,10 @@ public static void <B>logIn</B>(<A target="_top"
         which will handle the authentication flow, and return an OAuth access token for making API
         calls.
         <p/>
-        Because this process will not be available for all users, if single sign-on is not possible,
-        this method will automatically fall back to the OAuth 2.0 User-Agent flow. In this flow, the
+        Because this process will not be available for all users, if single sign-on is not
+        possible,
+        this method will automatically fall back to the OAuth 2.0 User-Agent flow. In this flow,
+        the
         user credentials are handled by Facebook in an embedded WebView, not by the client
         application.
         As such, the dialog makes a network request and renders HTML content rather than a native
@@ -1169,8 +1174,8 @@ public static void <B>logIn</B>(<A target="_top"
     <DD>
         <DL>
             <DT><B>Parameters:</B>
-            <DD><CODE>permissions</CODE> - A list of permissions to be used when logging in. Many of
-                these constants are defined
+            <DD><CODE>permissions</CODE> - A list of permissions to be used when logging in. Many
+                of these constants are defined
                 here: <A HREF="../../com/parse/ParseFacebookUtils.Permissions.html"
                          title="class in com.parse"><CODE>ParseFacebookUtils.Permissions</CODE></A>.
             <DD><CODE>activity</CODE> - The Android activity in which we want to display the
@@ -1273,12 +1278,12 @@ public static void <B>finishAuthentication</B>(int&nbsp;requestCode,
 <DL>
     <DD>Completes authentication after the Facebook app returns an activity result.
         <b>IMPORTANT:</b>
-        This method must be invoked at the top of the calling activity's onActivityResult() function
-        or
+        This method must be invoked at the top of the calling activity's onActivityResult()
+        function or
         Facebook authentication will not function properly!
         <p/>
-        If your calling activity does not currently implement onActivityResult(), you must implement
-        it
+        If your calling activity does not currently implement onActivityResult(), you must
+        implement it
         and include a call to this method if you intend to use the
         <A HREF="../../com/parse/ParseFacebookUtils.html#logIn(android.app.Activity, int, com.parse.LogInCallback)"><CODE>ParseFacebookUtils.logIn(Activity,
             int, LogInCallback)</CODE></A> or
@@ -1344,8 +1349,9 @@ public static void <B>saveLatestSessionData</B>(<A HREF="../../com/parse/ParseUs
 <FONT SIZE="-1"><A target="_top"
                    HREF="http://developer.android.com/reference/java/lang/Deprecated.html?is-external=true"
                    title="class or interface in java.lang">@Deprecated</A>
-</FONT>public static boolean <B>shouldExtendAccessToken</B>(<A HREF="../../com/parse/ParseUser.html"
-                                                               title="class in com.parse">ParseUser</A>&nbsp;user)</PRE>
+</FONT>public static boolean <B>shouldExtendAccessToken</B>(<A
+        HREF="../../com/parse/ParseUser.html"
+        title="class in com.parse">ParseUser</A>&nbsp;user)</PRE>
 <DL>
     <DD><B>Deprecated.</B>&nbsp;
         <P>
@@ -1435,9 +1441,8 @@ public static void <B>saveLatestSessionData</B>(<A HREF="../../com/parse/ParseUs
                     </TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="package-tree.html"><FONT
                             CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
-                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;
-                    </TD>
+                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../deprecated-list.html"><FONT
+                            CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../index-all.html"><FONT
                             CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../help-doc.html"><FONT
@@ -1457,17 +1462,16 @@ public static void <B>saveLatestSessionData</B>(<A HREF="../../com/parse/ParseUs
             &nbsp;<A HREF="../../com/parse/ParseFile.html" title="class in com.parse"><B>NEXT
             CLASS</B></A></FONT></TD>
         <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-            <A HREF="../../index.html?com/parse/ParseFacebookUtils.html" target="_top"><B>FRAMES</B></A>
-            &nbsp;
+            <A HREF="../../index.html?com/parse/ParseFacebookUtils.html"
+               target="_top"><B>FRAMES</B></A> &nbsp;
             &nbsp;<A HREF="ParseFacebookUtils.html" target="_top"><B>NO FRAMES</B></A> &nbsp;
             &nbsp;
             <SCRIPT type="text/javascript">
-  <!--
-  if(window==top) {
-    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
-  }
-  //-->
-
+                <!--
+                if (window == top) {
+                    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
+                }
+                //-->
             </SCRIPT>
             <NOSCRIPT>
                 <A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>

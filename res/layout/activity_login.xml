@@ -1,122 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/root"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/lightblue">
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightblue">
 
     <TextView
-        android:id="@+id/login_instructions_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="@string/login_instructions_1"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/white" />
-
-    <LinearLayout
-        android:id="@+id/LinearLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/login_instructions_1"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:id="@+id/login_username_text"
+            android:id="@+id/login_instructions_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login_signup_username_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/login_instructions_1"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"/>
+
+    <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_instructions_1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+        <TextView
+                android:id="@+id/login_username_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_signup_username_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"/>
 
         <EditText
-            android:id="@+id/login_username_field"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="text"
-            android:textColor="@color/white">
+                android:id="@+id/login_username_field"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/white">
 
-            <requestFocus />
+            <requestFocus/>
         </EditText>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/LinearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/LinearLayout1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LinearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
         <TextView
-            android:id="@+id/login_password_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/login_signup_password_text"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/white" />
+                android:id="@+id/login_password_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_signup_password_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"/>
 
         <EditText
-            android:id="@+id/login_password_field"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:textColor="@color/white" />
+                android:id="@+id/login_password_field"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="@color/white"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/LinearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/LinearLayout2"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/LinearLayout2"
-        android:layout_marginBottom="30dp">
+            android:id="@+id/LinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/LinearLayout2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/LinearLayout2"
+            android:layout_marginBottom="30dp">
 
         <TextView
-            android:id="@+id/login_instructions_2"
-            android:layout_width="109dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="0.50"
-            android:gravity="center"
-            android:text="@string/login_instructions_2"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/white" />
+                android:id="@+id/login_instructions_2"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.50"
+                android:gravity="center"
+                android:text="@string/login_instructions_2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"/>
 
         <Button
-            android:id="@+id/login_signup_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="0.50"
-            android:background="@color/white"
-            android:padding="15dp"
-            android:text="@string/login_sign_up_text"
-            android:textColor="@color/lightblue" />
+                android:id="@+id/login_signup_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.50"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:text="@string/login_sign_up_text"
+                android:textColor="@color/lightblue"/>
     </LinearLayout>
 
     <Button
-        android:id="@+id/login_login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/LinearLayout2"
-        android:layout_alignRight="@+id/LinearLayout3"
-        android:layout_below="@+id/LinearLayout2"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="40dp"
-        android:background="@color/white"
-        android:text="@string/login_login_text"
-        android:textColor="@color/lightblue" />
+            android:id="@+id/login_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/LinearLayout2"
+            android:layout_alignRight="@+id/LinearLayout3"
+            android:layout_below="@+id/LinearLayout2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:text="@string/login_login_text"
+            android:textColor="@color/lightblue"/>
 
 </RelativeLayout>

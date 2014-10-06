@@ -11,13 +11,11 @@
     <LINK REL="stylesheet" TYPE="text/css" HREF="../../style.css" TITLE="Style">
 
     <SCRIPT type="text/javascript">
-function windowTitle()
-{
-    if (location.href.indexOf('is-external=true') == -1) {
-        parent.document.title="ParsePush";
-    }
-}
-
+        function windowTitle() {
+            if (location.href.indexOf('is-external=true') == -1) {
+                parent.document.title = "ParsePush";
+            }
+        }
     </SCRIPT>
     <NOSCRIPT>
     </NOSCRIPT>
@@ -47,9 +45,8 @@ function windowTitle()
                             CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="package-tree.html"><FONT
                             CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
-                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;
-                    </TD>
+                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../deprecated-list.html"><FONT
+                            CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../index-all.html"><FONT
                             CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../help-doc.html"><FONT
@@ -74,12 +71,11 @@ function windowTitle()
             &nbsp;<A HREF="ParsePush.html" target="_top"><B>NO FRAMES</B></A> &nbsp;
             &nbsp;
             <SCRIPT type="text/javascript">
-  <!--
-  if(window==top) {
-    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
-  }
-  //-->
-
+                <!--
+                if (window == top) {
+                    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
+                }
+                //-->
             </SCRIPT>
             <NOSCRIPT>
                 <A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>
@@ -90,8 +86,7 @@ function windowTitle()
     </TR>
     <TR>
         <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
-            SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A
-                HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A
+            SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A
                 HREF="#method_summary">METHOD</A></FONT></TD>
         <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
             DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A
@@ -148,7 +143,8 @@ function windowTitle()
             <B>Constructor Summary</B></FONT></TH>
     </TR>
     <TR BGCOLOR="white" CLASS="TableRowColor">
-        <TD><CODE><B><A HREF="../../com/parse/ParsePush.html#ParsePush()">ParsePush</A></B>()</CODE>
+        <TD><CODE><B><A
+                HREF="../../com/parse/ParsePush.html#ParsePush()">ParsePush</A></B>()</CODE>
 
             <BR>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new push
@@ -181,8 +177,8 @@ function windowTitle()
         <TD><CODE><B><A HREF="../../com/parse/ParsePush.html#send()">send</A></B>()</CODE>
 
             <BR>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends this push notification
-            while blocking this thread until the push notification has
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends this push
+            notification while blocking this thread until the push notification has
             successfully reached the Parse servers.
         </TD>
     </TR>
@@ -194,13 +190,12 @@ function windowTitle()
                 target="_top"
                 HREF="http://developer.android.com/reference/org/json/JSONObject.html?is-external=true"
                 title="class or interface in org.json">JSONObject</A>&nbsp;data,
-            <A HREF="../../com/parse/ParseQuery.html"
-               title="class in com.parse">ParseQuery</A>&lt;<A
+            <A HREF="../../com/parse/ParseQuery.html" title="class in com.parse">ParseQuery</A>&lt;<A
                     HREF="../../com/parse/ParseInstallation.html" title="class in com.parse">ParseInstallation</A>&gt;&nbsp;query)</CODE>
 
             <BR>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to concisely
-            send a push to a query.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to
+            concisely send a push to a query.
         </TD>
     </TR>
     <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -211,14 +206,13 @@ function windowTitle()
                 target="_top"
                 HREF="http://developer.android.com/reference/org/json/JSONObject.html?is-external=true"
                 title="class or interface in org.json">JSONObject</A>&nbsp;data,
-            <A HREF="../../com/parse/ParseQuery.html"
-               title="class in com.parse">ParseQuery</A>&lt;<A
+            <A HREF="../../com/parse/ParseQuery.html" title="class in com.parse">ParseQuery</A>&lt;<A
                     HREF="../../com/parse/ParseInstallation.html" title="class in com.parse">ParseInstallation</A>&gt;&nbsp;query,
             <A HREF="../../com/parse/SendCallback.html" title="class in com.parse">SendCallback</A>&nbsp;callback)</CODE>
 
             <BR>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to concisely
-            send a push to a query.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to
+            concisely send a push to a query.
         </TD>
     </TR>
     <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -228,8 +222,8 @@ function windowTitle()
                 HREF="../../com/parse/ParsePush.html#sendInBackground()">sendInBackground</A></B>()</CODE>
 
             <BR>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends this push notification
-            in a background thread.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends this push
+            notification in a background thread.
         </TD>
     </TR>
     <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -237,11 +231,12 @@ function windowTitle()
             <CODE>&nbsp;void</CODE></FONT></TD>
         <TD><CODE><B><A
                 HREF="../../com/parse/ParsePush.html#sendInBackground(com.parse.SendCallback)">sendInBackground</A></B>(<A
-                HREF="../../com/parse/SendCallback.html" title="class in com.parse">SendCallback</A>&nbsp;callback)</CODE>
+                HREF="../../com/parse/SendCallback.html"
+                title="class in com.parse">SendCallback</A>&nbsp;callback)</CODE>
 
             <BR>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends this push notification
-            in a background thread.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends this push
+            notification in a background thread.
         </TD>
     </TR>
     <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -252,13 +247,12 @@ function windowTitle()
                 target="_top"
                 HREF="http://developer.android.com/reference/java/lang/String.html?is-external=true"
                 title="class or interface in java.lang">String</A>&nbsp;message,
-            <A HREF="../../com/parse/ParseQuery.html"
-               title="class in com.parse">ParseQuery</A>&lt;<A
+            <A HREF="../../com/parse/ParseQuery.html" title="class in com.parse">ParseQuery</A>&lt;<A
                     HREF="../../com/parse/ParseInstallation.html" title="class in com.parse">ParseInstallation</A>&gt;&nbsp;query)</CODE>
 
             <BR>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to concisely
-            send a push message to a query.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to
+            concisely send a push message to a query.
         </TD>
     </TR>
     <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -269,14 +263,13 @@ function windowTitle()
                 target="_top"
                 HREF="http://developer.android.com/reference/java/lang/String.html?is-external=true"
                 title="class or interface in java.lang">String</A>&nbsp;message,
-            <A HREF="../../com/parse/ParseQuery.html"
-               title="class in com.parse">ParseQuery</A>&lt;<A
+            <A HREF="../../com/parse/ParseQuery.html" title="class in com.parse">ParseQuery</A>&lt;<A
                     HREF="../../com/parse/ParseInstallation.html" title="class in com.parse">ParseInstallation</A>&gt;&nbsp;query,
             <A HREF="../../com/parse/SendCallback.html" title="class in com.parse">SendCallback</A>&nbsp;callback)</CODE>
 
             <BR>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to concisely
-            send a push message to a query.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to
+            concisely send a push message to a query.
         </TD>
     </TR>
     <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -337,8 +330,8 @@ function windowTitle()
         <TD><CODE><B><A HREF="../../com/parse/ParsePush.html#setExpirationTimeInterval(long)">setExpirationTimeInterval</A></B>(long&nbsp;timeInterval)</CODE>
 
             <BR>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the time interval after
-            which this notification should expire, in seconds.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the time interval
+            after which this notification should expire, in seconds.
         </TD>
     </TR>
     <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -366,7 +359,8 @@ function windowTitle()
     <TR BGCOLOR="white" CLASS="TableRowColor">
         <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
             <CODE>&nbsp;void</CODE></FONT></TD>
-        <TD><CODE><B><A HREF="../../com/parse/ParsePush.html#setPushToIOS(boolean)">setPushToIOS</A></B>(boolean&nbsp;pushToIOS)</CODE>
+        <TD><CODE><B><A
+                HREF="../../com/parse/ParsePush.html#setPushToIOS(boolean)">setPushToIOS</A></B>(boolean&nbsp;pushToIOS)</CODE>
 
             <BR>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;
@@ -380,8 +374,8 @@ function windowTitle()
                 HREF="../../com/parse/ParseInstallation.html" title="class in com.parse">ParseInstallation</A>&gt;&nbsp;query)</CODE>
 
             <BR>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the query for this push
-            for which this push notification will be sent.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the query for this
+            push for which this push notification will be sent.
         </TD>
     </TR>
 </TABLE>
@@ -545,8 +539,8 @@ public static void <B>sendDataInBackground</B>(<A target="_top"
     <DD>
         <DL>
             <DT><B>Parameters:</B>
-            <DD><CODE>data</CODE> - The entire data of the push message. See the push guide for more
-                details on the data
+            <DD><CODE>data</CODE> - The entire data of the push message. See the push guide for
+                more details on the data
                 format.
             <DD><CODE>query</CODE> - A ParseInstallation query which specifies the recipients of a
                 push.
@@ -578,8 +572,8 @@ public static void <B>sendDataInBackground</B>(<A target="_top"
     <DD>
         <DL>
             <DT><B>Parameters:</B>
-            <DD><CODE>data</CODE> - The entire data of the push message. See the push guide for more
-                details on the data
+            <DD><CODE>data</CODE> - The entire data of the push message. See the push guide for
+                more details on the data
                 format.
             <DD><CODE>query</CODE> - A ParseInstallation query which specifies the recipients of a
                 push.
@@ -646,7 +640,8 @@ public void <B>setQuery</B>(<A HREF="../../com/parse/ParseQuery.html" title="cla
 <DL>
     <DD>Sets the query for this push for which this push notification will be sent. This query will
         be
-        executed in the Parse cloud; this push notification will be sent to Installations which this
+        executed in the Parse cloud; this push notification will be sent to Installations which
+        this
         query yields. A push can either have channels or a query. Setting this will unset the
         channels.
         <P>
@@ -667,8 +662,10 @@ public void <B>setQuery</B>(<A HREF="../../com/parse/ParseQuery.html" title="cla
 <PRE>
 public void <B>setExpirationTime</B>(long&nbsp;time)</PRE>
 <DL>
-    <DD>Sets a UNIX epoch timestamp at which this notification should expire, in seconds (UTC). This
-        notification will be sent to devices which are either online at the time the notification is
+    <DD>Sets a UNIX epoch timestamp at which this notification should expire, in seconds (UTC).
+        This
+        notification will be sent to devices which are either online at the time the notification
+        is
         sent, or which come online before the expiration time is reached. Because device clocks are
         not
         guaranteed to be accurate, most applications should instead use
@@ -689,7 +686,8 @@ public void <B>setExpirationTime</B>(long&nbsp;time)</PRE>
 public void <B>setExpirationTimeInterval</B>(long&nbsp;timeInterval)</PRE>
 <DL>
     <DD>Sets the time interval after which this notification should expire, in seconds. This
-        notification will be sent to devices which are either online at the time the notification is
+        notification will be sent to devices which are either online at the time the notification
+        is
         sent, or which come online within the given number of seconds of the notification being
         received by Parse's server. An interval which is less than or equal to zero indicates that
         the
@@ -879,9 +877,8 @@ public void <B>sendInBackground</B>()</PRE>
                             CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="package-tree.html"><FONT
                             CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
-                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;
-                    </TD>
+                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../deprecated-list.html"><FONT
+                            CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../index-all.html"><FONT
                             CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../help-doc.html"><FONT
@@ -906,12 +903,11 @@ public void <B>sendInBackground</B>()</PRE>
             &nbsp;<A HREF="ParsePush.html" target="_top"><B>NO FRAMES</B></A> &nbsp;
             &nbsp;
             <SCRIPT type="text/javascript">
-  <!--
-  if(window==top) {
-    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
-  }
-  //-->
-
+                <!--
+                if (window == top) {
+                    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
+                }
+                //-->
             </SCRIPT>
             <NOSCRIPT>
                 <A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>
@@ -922,8 +918,7 @@ public void <B>sendInBackground</B>()</PRE>
     </TR>
     <TR>
         <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
-            SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A
-                HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A
+            SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A
                 HREF="#method_summary">METHOD</A></FONT></TD>
         <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
             DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A

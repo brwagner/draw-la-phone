@@ -9,7 +9,9 @@
     <string name="host_game_name">Game Name:</string>
     <string name="host_num_players">Number of Players:</string>
     <string name="host_start">Open Lobby</string>
-    <string name="host_instructions">When you\'re ready, press this button to allow other players to join your game :-)</string>
+    <string name="host_instructions">When you\'re ready, press this button to allow other players
+        to join your game :-)
+    </string>
     <string name="login_signup_username_text">Username:</string>
     <string name="login_signup_password_text">Password:</string>
     <string name="login_instructions_1">Login to Draw La Phone</string>
@@ -27,7 +29,9 @@
     <string name="title_activity_my">MyActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="write_instructions_content">What even is this?</string>
-    <string name="write_instructions_success">Start the game off with a word or phrase!\n\nSomething really rad preferably.\n\nBe as creative as you can.</string>
+    <string name="write_instructions_success">Start the game off with a word or
+        phrase!\n\nSomething really rad preferably.\n\nBe as creative as you can.
+    </string>
     <string name="write_instructions_hint">Your guess</string>
     <string name="draw_instructions_success">Draw a thing!</string>
     <string name="draw_instructions_fail">Loading phrase failed</string>

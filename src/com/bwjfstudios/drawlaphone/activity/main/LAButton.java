@@ -9,37 +9,39 @@ import com.bwjfstudios.drawlaphone.util.GameArrayAdapter;
  * Structure representing a button paired with a game adapter and a listener
  */
 class LAButton {
-    private AdapterView.OnItemClickListener listener;
-    private GameArrayAdapter adapter;
-    private Button button;
 
-    public LAButton(AdapterView.OnItemClickListener listener, GameArrayAdapter adapter, Button button) {
-        this.setListener(listener);
-        this.setAdapter(adapter);
-        this.setButton(button);
-    }
+  private AdapterView.OnItemClickListener listener;
+  private GameArrayAdapter adapter;
+  private Button button;
 
-    public AdapterView.OnItemClickListener getListener() {
-        return listener;
-    }
+  public LAButton(AdapterView.OnItemClickListener listener, GameArrayAdapter adapter,
+                  Button button) {
+    this.setListener(listener);
+    this.setAdapter(adapter);
+    this.setButton(button);
+  }
 
-    void setListener(AdapterView.OnItemClickListener listener) {
-        this.listener = listener;
-    }
+  public AdapterView.OnItemClickListener getListener() {
+    return listener;
+  }
 
-    public GameArrayAdapter getAdapter() {
-        return adapter;
-    }
+  void setListener(AdapterView.OnItemClickListener listener) {
+    this.listener = listener;
+  }
 
-    void setAdapter(GameArrayAdapter adapter) {
-        this.adapter = adapter;
-    }
+  public GameArrayAdapter getAdapter() {
+    return adapter;
+  }
 
-    public Button getButton() {
-        return button;
-    }
+  void setAdapter(GameArrayAdapter adapter) {
+    this.adapter = adapter;
+  }
 
-    void setButton(Button button) {
-        this.button = button;
-    }
+  public Button getButton() {
+    return button;
+  }
+
+  void setButton(Button button) {
+    this.button = button;
+  }
 }

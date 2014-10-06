@@ -11,13 +11,11 @@
     <LINK REL="stylesheet" TYPE="text/css" HREF="../../style.css" TITLE="Style">
 
     <SCRIPT type="text/javascript">
-function windowTitle()
-{
-    if (location.href.indexOf('is-external=true') == -1) {
-        parent.document.title="ParseQueryAdapter";
-    }
-}
-
+        function windowTitle() {
+            if (location.href.indexOf('is-external=true') == -1) {
+                parent.document.title = "ParseQueryAdapter";
+            }
+        }
     </SCRIPT>
     <NOSCRIPT>
     </NOSCRIPT>
@@ -43,13 +41,12 @@ function windowTitle()
                     <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT
                             CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="class-use/ParseQueryAdapter.html"><FONT
-                            CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+                            HREF="class-use/ParseQueryAdapter.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;
+                    </TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="package-tree.html"><FONT
                             CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
-                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;
-                    </TD>
+                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../deprecated-list.html"><FONT
+                            CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../index-all.html"><FONT
                             CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../help-doc.html"><FONT
@@ -74,12 +71,11 @@ function windowTitle()
             &nbsp;<A HREF="ParseQueryAdapter.html" target="_top"><B>NO FRAMES</B></A> &nbsp;
             &nbsp;
             <SCRIPT type="text/javascript">
-  <!--
-  if(window==top) {
-    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
-  }
-  //-->
-
+                <!--
+                if (window == top) {
+                    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
+                }
+                //-->
             </SCRIPT>
             <NOSCRIPT>
                 <A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>
@@ -90,8 +86,7 @@ function windowTitle()
     </TR>
     <TR>
         <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
-            SUMMARY:&nbsp;<A
-                HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A
+            SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A
                 HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A
                 HREF="#method_summary">METHOD</A></FONT></TD>
         <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
@@ -217,8 +212,8 @@ Below, an example showing off the level of configuration available with this cla
         </B></CODE>
 
             <BR>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implement with logic that is
-            called before and after objects are fetched from Parse by the
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implement with logic that
+            is called before and after objects are fetched from Parse by the
             adapter.
         </TD>
     </TR>
@@ -623,8 +618,8 @@ Below, an example showing off the level of configuration available with this cla
                 title="type parameter in ParseQueryAdapter">T</A>&gt;&nbsp;query)</CODE>
 
         <BR>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Override this method to manually
-        paginate the provided <code>ParseQuery</code>.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Override this method to
+        manually paginate the provided <code>ParseQuery</code>.
     </TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -802,8 +797,8 @@ public <B>ParseQueryAdapter</B>(<A target="_top"
         <DL>
             <DT><B>Parameters:</B>
             <DD><CODE>context</CODE> - The activity utilizing this adapter.
-            <DD><CODE>className</CODE> - The name of the Parse class of <code>ParseObject</code>s to
-                display.
+            <DD><CODE>className</CODE> - The name of the Parse class of <code>ParseObject</code>s
+                to display.
         </DL>
 </DL>
 <HR>
@@ -830,8 +825,8 @@ public <B>ParseQueryAdapter</B>(<A target="_top"
             <DD><CODE>context</CODE> - The activity utilizing this adapter.
             <DD><CODE>clazz</CODE> - The <code>ParseObject</code> subclass type to fetch and
                 display.
-            <DD><CODE>itemViewResource</CODE> - A resource id that represents the layout for an item
-                in the AdapterView.
+            <DD><CODE>itemViewResource</CODE> - A resource id that represents the layout for an
+                item in the AdapterView.
         </DL>
 </DL>
 <HR>
@@ -855,10 +850,10 @@ public <B>ParseQueryAdapter</B>(<A target="_top"
         <DL>
             <DT><B>Parameters:</B>
             <DD><CODE>context</CODE> - The activity utilizing this adapter.
-            <DD><CODE>className</CODE> - The name of the Parse class of <code>ParseObject</code>s to
-                display.
-            <DD><CODE>itemViewResource</CODE> - A resource id that represents the layout for an item
-                in the AdapterView.
+            <DD><CODE>className</CODE> - The name of the Parse class of <code>ParseObject</code>s
+                to display.
+            <DD><CODE>itemViewResource</CODE> - A resource id that represents the layout for an
+                item in the AdapterView.
         </DL>
 </DL>
 <HR>
@@ -878,8 +873,9 @@ public <B>ParseQueryAdapter</B>(<A target="_top"
         title="type parameter in ParseQueryAdapter">T</A>&gt;&nbsp;queryFactory)</PRE>
 <DL>
     <DD>Constructs a ParseQueryAdapter. Allows the caller to define further constraints on the
-        <A HREF="../../com/parse/ParseQuery.html" title="class in com.parse"><CODE>ParseQuery</CODE></A>
-        to be used when fetching items from Parse.
+        <A HREF="../../com/parse/ParseQuery.html"
+           title="class in com.parse"><CODE>ParseQuery</CODE></A> to be used when fetching items
+        from Parse.
         <P>
         <DL>
             <DT><B>Parameters:</B>
@@ -910,8 +906,9 @@ public <B>ParseQueryAdapter</B>(<A target="_top"
                          int&nbsp;itemViewResource)</PRE>
 <DL>
     <DD>Constructs a ParseQueryAdapter. Allows the caller to define further constraints on the
-        <A HREF="../../com/parse/ParseQuery.html" title="class in com.parse"><CODE>ParseQuery</CODE></A>
-        to be used when fetching items from Parse.
+        <A HREF="../../com/parse/ParseQuery.html"
+           title="class in com.parse"><CODE>ParseQuery</CODE></A> to be used when fetching items
+        from Parse.
         <P>
         <DL>
             <DT><B>Parameters:</B>
@@ -922,8 +919,8 @@ public <B>ParseQueryAdapter</B>(<A target="_top"
                 to build a <A HREF="../../com/parse/ParseQuery.html"
                               title="class in com.parse"><CODE>ParseQuery</CODE></A> for fetching
                 objects.
-            <DD><CODE>itemViewResource</CODE> - A resource id that represents the layout for an item
-                in the AdapterView.
+            <DD><CODE>itemViewResource</CODE> - A resource id that represents the layout for an
+                item in the AdapterView.
         </DL>
 </DL>
 
@@ -963,7 +960,8 @@ public <A target="_top"
 <H3>
     getItem</H3>
 <PRE>
-public <A HREF="../../com/parse/ParseQueryAdapter.html" title="type parameter in ParseQueryAdapter">T</A> <B>getItem</B>(int&nbsp;index)</PRE>
+public <A HREF="../../com/parse/ParseQueryAdapter.html"
+          title="type parameter in ParseQueryAdapter">T</A> <B>getItem</B>(int&nbsp;index)</PRE>
 <DL>
     <DD>
         <P>
@@ -1034,17 +1032,17 @@ public int <B>getViewTypeCount</B>()</PRE>
             <DT><B>Specified by:</B>
             <DD><CODE><A target="_top"
                          HREF="http://developer.android.com/reference/android/widget/Adapter.html?is-external=true#getViewTypeCount()"
-                         title="class or interface in android.widget">getViewTypeCount</A></CODE> in
-                interface <CODE><A target="_top"
-                                   HREF="http://developer.android.com/reference/android/widget/Adapter.html?is-external=true"
-                                   title="class or interface in android.widget">Adapter</A></CODE>
+                         title="class or interface in android.widget">getViewTypeCount</A></CODE>
+                in interface <CODE><A target="_top"
+                                      HREF="http://developer.android.com/reference/android/widget/Adapter.html?is-external=true"
+                                      title="class or interface in android.widget">Adapter</A></CODE>
             <DT><B>Overrides:</B>
             <DD><CODE><A target="_top"
                          HREF="http://developer.android.com/reference/android/widget/BaseAdapter.html?is-external=true#getViewTypeCount()"
-                         title="class or interface in android.widget">getViewTypeCount</A></CODE> in
-                class <CODE><A target="_top"
-                               HREF="http://developer.android.com/reference/android/widget/BaseAdapter.html?is-external=true"
-                               title="class or interface in android.widget">BaseAdapter</A></CODE>
+                         title="class or interface in android.widget">getViewTypeCount</A></CODE>
+                in class <CODE><A target="_top"
+                                  HREF="http://developer.android.com/reference/android/widget/BaseAdapter.html?is-external=true"
+                                  title="class or interface in android.widget">BaseAdapter</A></CODE>
         </DL>
     </DD>
     <DD>
@@ -1202,8 +1200,8 @@ public int <B>getCount</B>()</PRE>
 </DL>
 <HR>
 
-<A NAME="getItemView(com.parse.ParseObject,android.view.View,android.view.ViewGroup)"><!-- --></A><A
-        NAME="getItemView(T, android.view.View, android.view.ViewGroup)"><!-- --></A>
+<A NAME="getItemView(com.parse.ParseObject,android.view.View,android.view.ViewGroup)">
+    <!-- --></A><A NAME="getItemView(T, android.view.View, android.view.ViewGroup)"><!-- --></A>
 
 <H3>
     getItemView</H3>
@@ -1236,8 +1234,8 @@ public <A target="_top"
         This method displays the text value specified by the text key (set via
         <A HREF="../../com/parse/ParseQueryAdapter.html#setTextKey(java.lang.String)"><CODE>ParseQueryAdapter.setTextKey(String)</CODE></A>)
         and an image (described by a <A HREF="../../com/parse/ParseFile.html"
-                                        title="class in com.parse"><CODE>ParseFile</CODE></A>, under
-        the key set
+                                        title="class in com.parse"><CODE>ParseFile</CODE></A>,
+        under the key set
         via <A HREF="../../com/parse/ParseQueryAdapter.html#setImageKey(java.lang.String)"><CODE>ParseQueryAdapter.setImageKey(String)</CODE></A>)
         if applicable. If the text key is not set, the value for
         <A HREF="../../com/parse/ParseObject.html#getObjectId()"><CODE>ParseObject.getObjectId()</CODE></A>
@@ -1537,13 +1535,12 @@ public void <B>removeOnQueryLoadListener</B>(<A
                     <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT
                             CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="class-use/ParseQueryAdapter.html"><FONT
-                            CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+                            HREF="class-use/ParseQueryAdapter.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;
+                    </TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="package-tree.html"><FONT
                             CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
-                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;
-                    </TD>
+                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../deprecated-list.html"><FONT
+                            CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../index-all.html"><FONT
                             CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../help-doc.html"><FONT
@@ -1568,12 +1565,11 @@ public void <B>removeOnQueryLoadListener</B>(<A
             &nbsp;<A HREF="ParseQueryAdapter.html" target="_top"><B>NO FRAMES</B></A> &nbsp;
             &nbsp;
             <SCRIPT type="text/javascript">
-  <!--
-  if(window==top) {
-    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
-  }
-  //-->
-
+                <!--
+                if (window == top) {
+                    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
+                }
+                //-->
             </SCRIPT>
             <NOSCRIPT>
                 <A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>
@@ -1584,8 +1580,7 @@ public void <B>removeOnQueryLoadListener</B>(<A
     </TR>
     <TR>
         <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
-            SUMMARY:&nbsp;<A
-                HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A
+            SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A
                 HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A
                 HREF="#method_summary">METHOD</A></FONT></TD>
         <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">

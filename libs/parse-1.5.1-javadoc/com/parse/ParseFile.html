@@ -11,13 +11,11 @@
     <LINK REL="stylesheet" TYPE="text/css" HREF="../../style.css" TITLE="Style">
 
     <SCRIPT type="text/javascript">
-function windowTitle()
-{
-    if (location.href.indexOf('is-external=true') == -1) {
-        parent.document.title="ParseFile";
-    }
-}
-
+        function windowTitle() {
+            if (location.href.indexOf('is-external=true') == -1) {
+                parent.document.title = "ParseFile";
+            }
+        }
     </SCRIPT>
     <NOSCRIPT>
     </NOSCRIPT>
@@ -47,9 +45,8 @@ function windowTitle()
                             CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="package-tree.html"><FONT
                             CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
-                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;
-                    </TD>
+                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../deprecated-list.html"><FONT
+                            CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../index-all.html"><FONT
                             CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../help-doc.html"><FONT
@@ -74,12 +71,11 @@ function windowTitle()
             &nbsp;<A HREF="ParseFile.html" target="_top"><B>NO FRAMES</B></A> &nbsp;
             &nbsp;
             <SCRIPT type="text/javascript">
-  <!--
-  if(window==top) {
-    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
-  }
-  //-->
-
+                <!--
+                if (window == top) {
+                    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
+                }
+                //-->
             </SCRIPT>
             <NOSCRIPT>
                 <A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>
@@ -90,8 +86,7 @@ function windowTitle()
     </TR>
     <TR>
         <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
-            SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A
-                HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A
+            SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A
                 HREF="#method_summary">METHOD</A></FONT></TD>
         <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
             DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A
@@ -291,8 +286,8 @@ function windowTitle()
         <TD><CODE><B><A HREF="../../com/parse/ParseFile.html#isDirty()">isDirty</A></B>()</CODE>
 
             <BR>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whether the file still needs
-            to be saved.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whether the file still
+            needs to be saved.
         </TD>
     </TR>
     <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -321,7 +316,8 @@ function windowTitle()
             <CODE>&nbsp;void</CODE></FONT></TD>
         <TD><CODE><B><A
                 HREF="../../com/parse/ParseFile.html#saveInBackground(com.parse.SaveCallback)">saveInBackground</A></B>(<A
-                HREF="../../com/parse/SaveCallback.html" title="class in com.parse">SaveCallback</A>&nbsp;callback)</CODE>
+                HREF="../../com/parse/SaveCallback.html"
+                title="class in com.parse">SaveCallback</A>&nbsp;callback)</CODE>
 
             <BR>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saves the file to the Parse
@@ -333,7 +329,8 @@ function windowTitle()
             <CODE>&nbsp;void</CODE></FONT></TD>
         <TD><CODE><B><A
                 HREF="../../com/parse/ParseFile.html#saveInBackground(com.parse.SaveCallback, com.parse.ProgressCallback)">saveInBackground</A></B>(<A
-                HREF="../../com/parse/SaveCallback.html" title="class in com.parse">SaveCallback</A>&nbsp;saveCallback,
+                HREF="../../com/parse/SaveCallback.html"
+                title="class in com.parse">SaveCallback</A>&nbsp;saveCallback,
             <A HREF="../../com/parse/ProgressCallback.html" title="class in com.parse">ProgressCallback</A>&nbsp;progressCallback)</CODE>
 
             <BR>
@@ -407,7 +404,8 @@ public <B>ParseFile</B>(<A target="_top"
                     HREF="http://developer.android.com/reference/java/lang/String.html?is-external=true"
                     title="class or interface in java.lang">String</A>&nbsp;contentType)</PRE>
 <DL>
-    <DD>Creates a new file from a byte array, file name, and content type. Content type will be used
+    <DD>Creates a new file from a byte array, file name, and content type. Content type will be
+        used
         instead of auto-detection by file extension.
         <P>
         <DL>
@@ -474,7 +472,8 @@ public <B>ParseFile</B>(byte[]&nbsp;data,
                     HREF="http://developer.android.com/reference/java/lang/String.html?is-external=true"
                     title="class or interface in java.lang">String</A>&nbsp;contentType)</PRE>
 <DL>
-    <DD>Creates a new file from a byte array, and content type. Content type will be used instead of
+    <DD>Creates a new file from a byte array, and content type. Content type will be used instead
+        of
         auto-detection by file extension.
         <P>
         <DL>
@@ -611,7 +610,8 @@ public void <B>saveInBackground</B>(<A HREF="../../com/parse/SaveCallback.html"
     <DD>
         <DL>
             <DT><B>Parameters:</B>
-            <DD><CODE>saveCallback</CODE> - A SaveCallback that gets called when the save completes.
+            <DD><CODE>saveCallback</CODE> - A SaveCallback that gets called when the save
+                completes.
             <DD><CODE>progressCallback</CODE> - A ProgressCallback that is called periodically with
                 progress updates.
         </DL>
@@ -693,7 +693,8 @@ public void <B>getDataInBackground</B>(<A HREF="../../com/parse/GetDataCallback.
     <DD>
         <DL>
             <DT><B>Parameters:</B>
-            <DD><CODE>dataCallback</CODE> - A GetDataCallback that is called when the get completes.
+            <DD><CODE>dataCallback</CODE> - A GetDataCallback that is called when the get
+                completes.
             <DD><CODE>progressCallback</CODE> - A ProgressCallback that is called periodically with
                 progress updates.
         </DL>
@@ -714,7 +715,8 @@ public void <B>getDataInBackground</B>(<A HREF="../../com/parse/GetDataCallback.
     <DD>
         <DL>
             <DT><B>Parameters:</B>
-            <DD><CODE>dataCallback</CODE> - A GetDataCallback that is called when the get completes.
+            <DD><CODE>dataCallback</CODE> - A GetDataCallback that is called when the get
+                completes.
         </DL>
     </DD>
 </DL>
@@ -759,9 +761,8 @@ public void <B>cancel</B>()</PRE>
                             CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="package-tree.html"><FONT
                             CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
-                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;
-                    </TD>
+                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../deprecated-list.html"><FONT
+                            CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../index-all.html"><FONT
                             CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../help-doc.html"><FONT
@@ -786,12 +787,11 @@ public void <B>cancel</B>()</PRE>
             &nbsp;<A HREF="ParseFile.html" target="_top"><B>NO FRAMES</B></A> &nbsp;
             &nbsp;
             <SCRIPT type="text/javascript">
-  <!--
-  if(window==top) {
-    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
-  }
-  //-->
-
+                <!--
+                if (window == top) {
+                    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
+                }
+                //-->
             </SCRIPT>
             <NOSCRIPT>
                 <A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>
@@ -802,8 +802,7 @@ public void <B>cancel</B>()</PRE>
     </TR>
     <TR>
         <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
-            SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A
-                HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A
+            SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A
                 HREF="#method_summary">METHOD</A></FONT></TD>
         <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
             DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A

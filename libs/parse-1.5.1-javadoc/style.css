@@ -1,12 +1,12 @@
 /* Javadoc style sheet for Parse, by Christophe TAUZIET */
 
-html, body, frame { 
-    background-color: #FFFFFF; 
-    color:#000000;
+html, body, frame {
+    background-color: #FFFFFF;
+    color: #000000;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0px;
     padding: 10px;
-    
+
 }
 
 h1, h2, h3 {
@@ -18,20 +18,23 @@ h1 {
 }
 
 a:link {
- line-height: 14px;
- font-weight: bold;
- text-decoration: none;
- color: #444444;
+    line-height: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #444444;
 }
+
 a:visited {
- color: #777777;
- text-decoration: none;
- font-weight: bold;
+    color: #777777;
+    text-decoration: none;
+    font-weight: bold;
 }
+
 a:hover {
- border-bottom: 2px solid #666666;
+    border-bottom: 2px solid #666666;
 }
-hr{
+
+hr {
     display: none;
 }
 
@@ -40,7 +43,7 @@ table:nth-child(4) {
 }
 
 /* Table colors */
-.TableHeadingColor { 
+.TableHeadingColor {
     padding: 5px 0px;
     background-color: #1789BA;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1789BA), color-stop(100%, #0A67A0));
@@ -69,34 +72,40 @@ table:nth-child(4) {
 }
 
 .TableHeadingColor a:link, .TableHeadingColor a:visited {
- color: #bbbbbb;
-}
-.TableHeadingColor a:hover {
- border: none;
- background-color:#666666;
-}
-.TableSubHeadingColor  { 
-    background: #EEEEEE; 
-    color:#000000;
-}
-.TableRowColor { 
-    background: #FFFFFF; 
-    color:#000000; 
-}
-.FrameTitleFont   { 
-    font-size: 100%; 
-    color: #000000;
-}
-.FrameHeadingFont { 
-    font-size: 90%; 
-    color:#000000; 
-}
-.FrameItemFont { 
-    font-size: 90%; 
-    color:#000000; 
+    color: #bbbbbb;
 }
 
-.NavBarCell1    { 
+.TableHeadingColor a:hover {
+    border: none;
+    background-color: #666666;
+}
+
+.TableSubHeadingColor {
+    background: #EEEEEE;
+    color: #000000;
+}
+
+.TableRowColor {
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.FrameTitleFont {
+    font-size: 100%;
+    color: #000000;
+}
+
+.FrameHeadingFont {
+    font-size: 90%;
+    color: #000000;
+}
+
+.FrameItemFont {
+    font-size: 90%;
+    color: #000000;
+}
+
+.NavBarCell1 {
     padding: 10px 10px 10px 20px;
     background-color: #1789BA;
     background-image: -webkit-linear-gradient(#1789BA, #0A67A0);
@@ -117,7 +126,8 @@ table:nth-child(4) {
 .NavBarCell1 a:hover {
     border: none;
 }
-.NavBarCell1Rev { 
+
+.NavBarCell1Rev {
     background-color: #0A67A0;
     background-image: -webkit-linear-gradient(#0A67A0, #1789BA);
     background-image: -moz-linear-gradient(#0A67A0, #1789BA);
@@ -127,10 +137,12 @@ table:nth-child(4) {
     border: 1px solid #363636;
     padding: 10px 10px 10px 10px;
 }
-.NavBarFont1, .NavBarFont1Rev { 
-    color:#FFFFFF;
+
+.NavBarFont1, .NavBarFont1Rev {
+    color: #FFFFFF;
 }
-.NavBarCell2, .NavBarCell3 { 
-    background-color:#FFFFFF; 
-    color:#000000;
+
+.NavBarCell2, .NavBarCell3 {
+    background-color: #FFFFFF;
+    color: #000000;
 }

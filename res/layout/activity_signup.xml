@@ -1,114 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/root"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/orange">
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/orange">
 
     <TextView
-        android:id="@+id/signup_instructions_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="@string/signup_instructions_1"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/white" />
-
-    <LinearLayout
-        android:id="@+id/LinearLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signup_instructions_1"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:id="@+id/signup_username_text"
+            android:id="@+id/signup_instructions_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login_signup_username_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/signup_instructions_1"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"/>
+
+    <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_instructions_1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+        <TextView
+                android:id="@+id/signup_username_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_signup_username_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"/>
 
         <EditText
-            android:id="@+id/signup_username_field"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="text"
-            android:textColor="@color/white">
+                android:id="@+id/signup_username_field"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/white">
 
-            <requestFocus />
+            <requestFocus/>
         </EditText>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/LinearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/LinearLayout1"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LinearLayout1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
         <TextView
-            android:id="@+id/signup_password1_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/login_signup_password_text"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/white" />
+                android:id="@+id/signup_password1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_signup_password_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"/>
 
         <EditText
-            android:id="@+id/signup_password1_field"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:textColor="@color/white" />
+                android:id="@+id/signup_password1_field"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="@color/white"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/LinearLayout01"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/LinearLayout2"
-        android:layout_alignRight="@+id/LinearLayout2"
-        android:layout_below="@+id/LinearLayout2">
+            android:id="@+id/LinearLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/LinearLayout2"
+            android:layout_alignRight="@+id/LinearLayout2"
+            android:layout_below="@+id/LinearLayout2">
 
         <TextView
-            android:id="@+id/signup_password2_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/signup_password2_text"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/white" />
+                android:id="@+id/signup_password2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_password2_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"/>
 
         <EditText
-            android:id="@+id/signup_password2_field"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:textColor="@color/white" />
+                android:id="@+id/signup_password2_field"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="@color/white"/>
     </LinearLayout>
 
     <Button
-        android:id="@+id/signup_create_account_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/LinearLayout01"
-        android:layout_alignRight="@+id/LinearLayout01"
-        android:layout_below="@+id/LinearLayout01"
-        android:layout_margin="40dp"
-        android:layout_marginTop="12dp"
-        android:background="@color/white"
-        android:text="@string/signup_create_account"
-        android:textColor="@color/orange" />
+            android:id="@+id/signup_create_account_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/LinearLayout01"
+            android:layout_alignRight="@+id/LinearLayout01"
+            android:layout_below="@+id/LinearLayout01"
+            android:layout_margin="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:text="@string/signup_create_account"
+            android:textColor="@color/orange"/>
 
 </RelativeLayout>

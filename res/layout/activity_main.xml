@@ -1,114 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/root"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/lighterblue"
-    android:clickable="false"
-    android:orientation="vertical">
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lighterblue"
+                android:clickable="false"
+                android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/LinearLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/main_host_button"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/main_margins"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:text="@string/host"
-            android:textColor="@color/black" />
-
-        <Button
-            android:id="@+id/main_join_button"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/main_margins"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:text="@string/join"
-            android:textColor="@color/black" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/LinearLayout2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/LinearLayout1"
-        android:focusableInTouchMode="false"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/main_your_turn_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/main_margins"
-            android:layout_weight="1"
-            android:background="@color/paleblue"
-            android:text="@string/main_your_turn" />
-
-        <Button
-            android:id="@+id/main_current_game_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/main_margins"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:text="@string/main_current_games" />
-
-        <Button
-            android:id="@+id/main_complete_game_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/main_margins"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:text="@string/main_complete_games" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/LinearLayout2"
-        android:orientation="vertical">
-
-        <ListView
-            android:id="@+id/main_list"
+            android:id="@+id/LinearLayout1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/main_margins"
-            android:background="@color/white"
-            android:dividerHeight="2dp"
-            android:drawSelectorOnTop="false"/>
+            android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:orientation="vertical"
+        <Button
+                android:id="@+id/main_host_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margins"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="@string/host"
+                android:textColor="@color/black"/>
+
+        <Button
+                android:id="@+id/main_join_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margins"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="@string/join"
+                android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LinearLayout1"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/main_your_turn_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margins"
+                android:layout_weight="1"
+                android:background="@color/paleblue"
+                android:text="@string/main_your_turn"/>
+
+        <Button
+                android:id="@+id/main_current_game_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margins"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="@string/main_current_games"/>
+
+        <Button
+                android:id="@+id/main_complete_game_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margins"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="@string/main_complete_games"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_margin="10dp">
+            android:layout_below="@+id/LinearLayout2"
+            android:orientation="vertical">
+
+        <ListView
+                android:id="@+id/main_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/main_margins"
+                android:background="@color/white"
+                android:dividerHeight="2dp"
+                android:drawSelectorOnTop="false"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp">
 
             <ImageView
-                android:id="@+id/main_smile_frown_image"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/smile_or_frown"
-                android:layout_margin="10dp" />
+                    android:id="@+id/main_smile_frown_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/smile_or_frown"
+                    android:layout_margin="10dp"/>
 
             <TextView
-                android:id="@+id/main_smile_frown_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:paddingTop="10dp"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/white"
-                android:textIsSelectable="false" />
+                    android:id="@+id/main_smile_frown_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textIsSelectable="false"/>
         </LinearLayout>
 
     </LinearLayout>

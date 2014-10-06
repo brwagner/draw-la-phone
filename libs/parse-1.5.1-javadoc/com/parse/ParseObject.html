@@ -11,13 +11,11 @@
     <LINK REL="stylesheet" TYPE="text/css" HREF="../../style.css" TITLE="Style">
 
     <SCRIPT type="text/javascript">
-function windowTitle()
-{
-    if (location.href.indexOf('is-external=true') == -1) {
-        parent.document.title="ParseObject";
-    }
-}
-
+        function windowTitle() {
+            if (location.href.indexOf('is-external=true') == -1) {
+                parent.document.title = "ParseObject";
+            }
+        }
     </SCRIPT>
     <NOSCRIPT>
     </NOSCRIPT>
@@ -42,14 +40,12 @@ function windowTitle()
                             CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT
                             CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
-                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="class-use/ParseObject.html"><FONT
+                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="class-use/ParseObject.html"><FONT
                             CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="package-tree.html"><FONT
                             CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
-                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;
-                    </TD>
+                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../deprecated-list.html"><FONT
+                            CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../index-all.html"><FONT
                             CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../help-doc.html"><FONT
@@ -74,12 +70,11 @@ function windowTitle()
             &nbsp;<A HREF="ParseObject.html" target="_top"><B>NO FRAMES</B></A> &nbsp;
             &nbsp;
             <SCRIPT type="text/javascript">
-  <!--
-  if(window==top) {
-    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
-  }
-  //-->
-
+                <!--
+                if (window == top) {
+                    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
+                }
+                //-->
             </SCRIPT>
             <NOSCRIPT>
                 <A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>
@@ -131,11 +126,13 @@ function windowTitle()
 </PRE>
 
 <P>
-    The ParseObject is a local representation of data that can be saved and retrieved from the Parse
+    The ParseObject is a local representation of data that can be saved and retrieved from the
+    Parse
     cloud.
 
 <p>
-    The basic workflow for creating new data is to construct a new ParseObject, use put() to fill it
+    The basic workflow for creating new data is to construct a new ParseObject, use put() to fill
+    it
     with data, and then use save() to persist to the database.
 
 <p>
@@ -201,8 +198,8 @@ function windowTitle()
                 title="class or interface in java.lang">String</A>&nbsp;theClassName)</CODE>
 
             <BR>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new ParseObject
-            with no data in it.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new
+            ParseObject with no data in it.
         </TD>
     </TR>
 </TABLE>
@@ -218,7 +215,8 @@ function windowTitle()
 <TR BGCOLOR="white" CLASS="TableRowColor">
     <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
         <CODE>&nbsp;void</CODE></FONT></TD>
-    <TD><CODE><B><A HREF="../../com/parse/ParseObject.html#add(java.lang.String, java.lang.Object)">add</A></B>(<A
+    <TD><CODE><B><A
+            HREF="../../com/parse/ParseObject.html#add(java.lang.String, java.lang.Object)">add</A></B>(<A
             target="_top"
             HREF="http://developer.android.com/reference/java/lang/String.html?is-external=true"
             title="class or interface in java.lang">String</A>&nbsp;key,
@@ -227,8 +225,8 @@ function windowTitle()
            title="class or interface in java.lang">Object</A>&nbsp;value)</CODE>
 
         <BR>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atomically adds an object to the
-        end of the array associated with a given key.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atomically adds an object to
+        the end of the array associated with a given key.
     </TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -280,8 +278,8 @@ function windowTitle()
            title="class or interface in java.lang">Object</A>&nbsp;value)</CODE>
 
         <BR>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atomically adds an object to the
-        array associated with a given key, only if it is not already
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atomically adds an object to
+        the array associated with a given key, only if it is not already
         present in the array.
     </TD>
 </TR>
@@ -311,8 +309,7 @@ function windowTitle()
                 </TR>
             </TABLE>
         </CODE></FONT></TD>
-    <TD><CODE><B><A
-            HREF="../../com/parse/ParseObject.html#create(java.lang.Class)">create</A></B>(<A
+    <TD><CODE><B><A HREF="../../com/parse/ParseObject.html#create(java.lang.Class)">create</A></B>(<A
             target="_top"
             HREF="http://developer.android.com/reference/java/lang/Class.html?is-external=true"
             title="class or interface in java.lang">Class</A>&lt;T&gt;&nbsp;subclass)</CODE>
@@ -439,7 +436,8 @@ function windowTitle()
         <CODE>&nbsp;void</CODE></FONT></TD>
     <TD><CODE><B><A
             HREF="../../com/parse/ParseObject.html#deleteEventually(com.parse.DeleteCallback)">deleteEventually</A></B>(<A
-            HREF="../../com/parse/DeleteCallback.html" title="class in com.parse">DeleteCallback</A>&nbsp;callback)</CODE>
+            HREF="../../com/parse/DeleteCallback.html"
+            title="class in com.parse">DeleteCallback</A>&nbsp;callback)</CODE>
 
         <BR>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deletes this object from the
@@ -463,7 +461,8 @@ function windowTitle()
         <CODE>&nbsp;void</CODE></FONT></TD>
     <TD><CODE><B><A
             HREF="../../com/parse/ParseObject.html#deleteInBackground(com.parse.DeleteCallback)">deleteInBackground</A></B>(<A
-            HREF="../../com/parse/DeleteCallback.html" title="class in com.parse">DeleteCallback</A>&nbsp;callback)</CODE>
+            HREF="../../com/parse/DeleteCallback.html"
+            title="class in com.parse">DeleteCallback</A>&nbsp;callback)</CODE>
 
         <BR>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deletes this object on the
@@ -635,8 +634,8 @@ function windowTitle()
     <TD><CODE><B><A HREF="../../com/parse/ParseObject.html#fetchIfNeeded()">fetchIfNeeded</A></B>()</CODE>
 
         <BR>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If this ParseObject has not been
-        fetched (i.e.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If this ParseObject has not
+        been fetched (i.e.
     </TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -657,8 +656,8 @@ function windowTitle()
             HREF="../../com/parse/GetCallback.html" title="class in com.parse">GetCallback</A>&lt;T&gt;&nbsp;callback)</CODE>
 
         <BR>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If this ParseObject has not been
-        fetched (i.e.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If this ParseObject has not
+        been fetched (i.e.
     </TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -981,8 +980,9 @@ function windowTitle()
                         <CODE>&lt;T extends <A HREF="../../com/parse/ParseObject.html"
                                                title="class in com.parse">ParseObject</A>&gt;
                             <BR>
-                            <A HREF="../../com/parse/ParseRelation.html" title="class in com.parse">ParseRelation</A>&lt;T&gt;
-                        </CODE></FONT></TD>
+                            <A HREF="../../com/parse/ParseRelation.html"
+                               title="class in com.parse">ParseRelation</A>&lt;T&gt;</CODE></FONT>
+                    </TD>
                 </TR>
             </TABLE>
         </CODE></FONT></TD>
@@ -1087,8 +1087,8 @@ function windowTitle()
             HREF="../../com/parse/ParseObject.html#isDataAvailable()">isDataAvailable</A></B>()</CODE>
 
         <BR>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets whether the ParseObject has
-        been fetched.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets whether the ParseObject
+        has been fetched.
     </TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -1167,7 +1167,8 @@ function windowTitle()
                 </TR>
             </TABLE>
         </CODE></FONT></TD>
-    <TD><CODE><B><A HREF="../../com/parse/ParseObject.html#pinAll(java.util.List)">pinAll</A></B>(<A
+    <TD><CODE><B><A
+            HREF="../../com/parse/ParseObject.html#pinAll(java.util.List)">pinAll</A></B>(<A
             target="_top"
             HREF="http://developer.android.com/reference/java/util/List.html?is-external=true"
             title="class or interface in java.util">List</A>&lt;T&gt;&nbsp;objects)</CODE>
@@ -1310,7 +1311,8 @@ function windowTitle()
 <TR BGCOLOR="white" CLASS="TableRowColor">
     <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
         <CODE>&nbsp;void</CODE></FONT></TD>
-    <TD><CODE><B><A HREF="../../com/parse/ParseObject.html#pinInBackground(com.parse.SaveCallback)">pinInBackground</A></B>(<A
+    <TD><CODE><B><A
+            HREF="../../com/parse/ParseObject.html#pinInBackground(com.parse.SaveCallback)">pinInBackground</A></B>(<A
             HREF="../../com/parse/SaveCallback.html" title="class in com.parse">SaveCallback</A>&nbsp;callback)</CODE>
 
         <BR>
@@ -1336,7 +1338,8 @@ function windowTitle()
 <TR BGCOLOR="white" CLASS="TableRowColor">
     <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
         <CODE>&nbsp;void</CODE></FONT></TD>
-    <TD><CODE><B><A HREF="../../com/parse/ParseObject.html#put(java.lang.String, java.lang.Object)">put</A></B>(<A
+    <TD><CODE><B><A
+            HREF="../../com/parse/ParseObject.html#put(java.lang.String, java.lang.Object)">put</A></B>(<A
             target="_top"
             HREF="http://developer.android.com/reference/java/lang/String.html?is-external=true"
             title="class or interface in java.lang">String</A>&nbsp;key,
@@ -1382,8 +1385,8 @@ function windowTitle()
             HREF="../../com/parse/ParseObject.html" title="class in com.parse">ParseObject</A>&gt;&nbsp;subclass)</CODE>
 
         <BR>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registers a custom subclass type
-        with the Parse SDK, enabling strong-typing of those
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registers a custom subclass
+        type with the Parse SDK, enabling strong-typing of those
         ParseObjects whenever they appear.
     </TD>
 </TR>
@@ -1396,8 +1399,8 @@ function windowTitle()
             title="class or interface in java.lang">String</A>&nbsp;key)</CODE>
 
         <BR>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes a key from this object's
-        data if it exists.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes a key from this
+        object's data if it exists.
     </TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -1413,8 +1416,8 @@ function windowTitle()
            title="class or interface in java.util">Collection</A>&lt;?&gt;&nbsp;values)</CODE>
 
         <BR>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atomically removes all instances
-        of the objects contained in a <code>Collection</code> from the
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atomically removes all
+        instances of the objects contained in a <code>Collection</code> from the
         array associated with a given key.
     </TD>
 </TR>
@@ -1424,7 +1427,8 @@ function windowTitle()
     <TD><CODE><B><A HREF="../../com/parse/ParseObject.html#save()">save</A></B>()</CODE>
 
         <BR>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saves this object to the server.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saves this object to the
+        server.
     </TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -1521,8 +1525,7 @@ function windowTitle()
         <CODE>&nbsp;void</CODE></FONT></TD>
     <TD><CODE><B><A
             HREF="../../com/parse/ParseObject.html#setACL(com.parse.ParseACL)">setACL</A></B>(<A
-            HREF="../../com/parse/ParseACL.html"
-            title="class in com.parse">ParseACL</A>&nbsp;acl)</CODE>
+            HREF="../../com/parse/ParseACL.html" title="class in com.parse">ParseACL</A>&nbsp;acl)</CODE>
 
         <BR>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the ParseACL governing this
@@ -1554,7 +1557,8 @@ function windowTitle()
 <TR BGCOLOR="white" CLASS="TableRowColor">
     <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
         <CODE>&nbsp;void</CODE></FONT></TD>
-    <TD><CODE><B><A HREF="../../com/parse/ParseObject.html#unpin(java.lang.String)">unpin</A></B>(<A
+    <TD><CODE><B><A
+            HREF="../../com/parse/ParseObject.html#unpin(java.lang.String)">unpin</A></B>(<A
             target="_top"
             HREF="http://developer.android.com/reference/java/lang/String.html?is-external=true"
             title="class or interface in java.lang">String</A>&nbsp;name)</CODE>
@@ -1653,7 +1657,8 @@ function windowTitle()
         <CODE>static&nbsp;void</CODE></FONT></TD>
     <TD><CODE><B><A
             HREF="../../com/parse/ParseObject.html#unpinAllInBackground(com.parse.DeleteCallback)">unpinAllInBackground</A></B>(<A
-            HREF="../../com/parse/DeleteCallback.html" title="class in com.parse">DeleteCallback</A>&nbsp;callback)</CODE>
+            HREF="../../com/parse/DeleteCallback.html"
+            title="class in com.parse">DeleteCallback</A>&nbsp;callback)</CODE>
 
         <BR>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes the objects and every
@@ -1796,7 +1801,8 @@ function windowTitle()
         <CODE>&nbsp;void</CODE></FONT></TD>
     <TD><CODE><B><A
             HREF="../../com/parse/ParseObject.html#unpinInBackground(com.parse.DeleteCallback)">unpinInBackground</A></B>(<A
-            HREF="../../com/parse/DeleteCallback.html" title="class in com.parse">DeleteCallback</A>&nbsp;callback)</CODE>
+            HREF="../../com/parse/DeleteCallback.html"
+            title="class in com.parse">DeleteCallback</A>&nbsp;callback)</CODE>
 
         <BR>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes the object and every
@@ -1959,7 +1965,8 @@ public static <A HREF="../../com/parse/ParseObject.html" title="class in com.par
         HREF="http://developer.android.com/reference/java/lang/String.html?is-external=true"
         title="class or interface in java.lang">String</A>&nbsp;className)</PRE>
 <DL>
-    <DD>Creates a new ParseObject based upon a class name. If the class name is a special type (e.g.
+    <DD>Creates a new ParseObject based upon a class name. If the class name is a special type
+        (e.g.
         for ParseUser), then the appropriate type of ParseObject is returned.
         <P>
     <DD>
@@ -2017,8 +2024,7 @@ public static <A HREF="../../com/parse/ParseObject.html" title="class in com.par
         ParseObjects. Calling <A HREF="../../com/parse/ParseObject.html#isDataAvailable()"><CODE>ParseObject.isDataAvailable()</CODE></A>
         on this object will return <code>false</code> until
         <A HREF="../../com/parse/ParseObject.html#fetchIfNeeded()"><CODE>ParseObject.fetchIfNeeded()</CODE></A>
-        or
-        <A HREF="../../com/parse/ParseObject.html#refresh()"><CODE>ParseObject.refresh()</CODE></A>
+        or <A HREF="../../com/parse/ParseObject.html#refresh()"><CODE>ParseObject.refresh()</CODE></A>
         has been called. No network request will be
         made.
         <P>
@@ -2051,8 +2057,7 @@ public static &lt;T extends <A HREF="../../com/parse/ParseObject.html" title="cl
         ParseObjects. Calling <A HREF="../../com/parse/ParseObject.html#isDataAvailable()"><CODE>ParseObject.isDataAvailable()</CODE></A>
         on this object will return <code>false</code> until
         <A HREF="../../com/parse/ParseObject.html#fetchIfNeeded()"><CODE>ParseObject.fetchIfNeeded()</CODE></A>
-        or
-        <A HREF="../../com/parse/ParseObject.html#refresh()"><CODE>ParseObject.refresh()</CODE></A>
+        or <A HREF="../../com/parse/ParseObject.html#refresh()"><CODE>ParseObject.refresh()</CODE></A>
         has been called. No network request will be
         made.
         <P>
@@ -2232,7 +2237,8 @@ public <A target="_top"
           title="class or interface in java.lang">String</A> <B>getObjectId</B>()</PRE>
 <DL>
     <DD>Accessor to the object id. An object id is assigned as soon as an object is saved to the
-        server. The combination of a className and an objectId uniquely identifies an object in your
+        server. The combination of a className and an objectId uniquely identifies an object in
+        your
         application.
         <P>
     <DD>
@@ -2336,13 +2342,16 @@ public final void <B>saveInBackground</B>()</PRE>
 public final void <B>saveEventually</B>()</PRE>
 <DL>
     <DD>Saves this object to the server at some unspecified time in the future, even if Parse is
-        currently inaccessible. Use this when you may not have a solid network connection, and don't
+        currently inaccessible. Use this when you may not have a solid network connection, and
+        don't
         need to know when the save completes. If there is some problem with the object such that it
-        can't be saved, it will be silently discarded. Objects saved with this method will be stored
+        can't be saved, it will be silently discarded. Objects saved with this method will be
+        stored
         locally in an on-disk cache until they can be delivered to Parse. They will be sent
         immediately
         if possible. Otherwise, they will be sent the next time a network connection is available.
-        Objects saved this way will persist even after the app is closed, in which case they will be
+        Objects saved this way will persist even after the app is closed, in which case they will
+        be
         sent the next time the app is opened. If more than 10MB of data is waiting to be sent,
         subsequent calls to saveEventually or deleteEventually will cause old saves to be silently
         discarded until the connection can be re-established, and the queued objects can be saved.
@@ -2363,13 +2372,16 @@ public void <B>saveEventually</B>(<A HREF="../../com/parse/SaveCallback.html"
                                      title="class in com.parse">SaveCallback</A>&nbsp;callback)</PRE>
 <DL>
     <DD>Saves this object to the server at some unspecified time in the future, even if Parse is
-        currently inaccessible. Use this when you may not have a solid network connection, and don't
+        currently inaccessible. Use this when you may not have a solid network connection, and
+        don't
         need to know when the save completes. If there is some problem with the object such that it
-        can't be saved, it will be silently discarded. Objects saved with this method will be stored
+        can't be saved, it will be silently discarded. Objects saved with this method will be
+        stored
         locally in an on-disk cache until they can be delivered to Parse. They will be sent
         immediately
         if possible. Otherwise, they will be sent the next time a network connection is available.
-        Objects saved this way will persist even after the app is closed, in which case they will be
+        Objects saved this way will persist even after the app is closed, in which case they will
+        be
         sent the next time the app is opened. If more than 10MB of data is waiting to be sent,
         subsequent calls to saveEventually or deleteEventually will cause old saves to be silently
         discarded until the connection can be re-established, and the queued objects can be saved.
@@ -2391,14 +2403,16 @@ public void <B>saveEventually</B>(<A HREF="../../com/parse/SaveCallback.html"
 <PRE>
 public final void <B>deleteEventually</B>()</PRE>
 <DL>
-    <DD>Deletes this object from the server at some unspecified time in the future, even if Parse is
-        currently inaccessible. Use this when you may not have a solid network connection, and don't
+    <DD>Deletes this object from the server at some unspecified time in the future, even if Parse
+        is
+        currently inaccessible. Use this when you may not have a solid network connection, and
+        don't
         need to know when the delete completes. If there is some problem with the object such that
         it
         can't be deleted, the request will be silently discarded. Delete requests made with this
         method
-        will be stored locally in an on-disk cache until they can be transmitted to Parse. They will
-        be
+        will be stored locally in an on-disk cache until they can be transmitted to Parse. They
+        will be
         sent immediately if possible. Otherwise, they will be sent the next time a network
         connection
         is available. Delete instructions saved this way will persist even after the app is closed,
@@ -2424,14 +2438,16 @@ public final void <B>deleteEventually</B>()</PRE>
 public final void <B>deleteEventually</B>(<A HREF="../../com/parse/DeleteCallback.html"
                                              title="class in com.parse">DeleteCallback</A>&nbsp;callback)</PRE>
 <DL>
-    <DD>Deletes this object from the server at some unspecified time in the future, even if Parse is
-        currently inaccessible. Use this when you may not have a solid network connection, and don't
+    <DD>Deletes this object from the server at some unspecified time in the future, even if Parse
+        is
+        currently inaccessible. Use this when you may not have a solid network connection, and
+        don't
         need to know when the delete completes. If there is some problem with the object such that
         it
         can't be deleted, the request will be silently discarded. Delete requests made with this
         method
-        will be stored locally in an on-disk cache until they can be transmitted to Parse. They will
-        be
+        will be stored locally in an on-disk cache until they can be transmitted to Parse. They
+        will be
         sent immediately if possible. Otherwise, they will be sent the next time a network
         connection
         is available. Delete instructions saved this way will persist even after the app is closed,
@@ -2531,14 +2547,15 @@ public &lt;T extends <A HREF="../../com/parse/ParseObject.html" title="class in 
 public final &lt;T extends <A HREF="../../com/parse/ParseObject.html" title="class in com.parse">ParseObject</A>&gt; void <B>fetchInBackground</B>(<A
         HREF="../../com/parse/GetCallback.html" title="class in com.parse">GetCallback</A>&lt;T&gt;&nbsp;callback)</PRE>
 <DL>
-    <DD>Fetches this object with the data from the server in a background thread. This is preferable
-        to
+    <DD>Fetches this object with the data from the server in a background thread. This is
+        preferable to
         using fetch(), unless your code is already running from a background thread.
         <P>
     <DD>
         <DL>
             <DT><B>Parameters:</B>
-            <DD><CODE>callback</CODE> - callback.done(object, e) is called when the fetch completes.
+            <DD><CODE>callback</CODE> - callback.done(object, e) is called when the fetch
+                completes.
         </DL>
     </DD>
 </DL>
@@ -2582,15 +2599,16 @@ public final &lt;T extends <A HREF="../../com/parse/ParseObject.html" title="cla
     <DD>If this ParseObject has not been fetched (i.e. <A
             HREF="../../com/parse/ParseObject.html#isDataAvailable()"><CODE>ParseObject.isDataAvailable()</CODE></A>
         returns false),
-        fetches this object with the data from the server in a background thread. This is preferable
-        to
+        fetches this object with the data from the server in a background thread. This is
+        preferable to
         using <A HREF="../../com/parse/ParseObject.html#fetchIfNeeded()"><CODE>ParseObject.fetchIfNeeded()</CODE></A>,
         unless your code is already running from a background thread.
         <P>
     <DD>
         <DL>
             <DT><B>Parameters:</B>
-            <DD><CODE>callback</CODE> - callback.done(object, e) is called when the fetch completes.
+            <DD><CODE>callback</CODE> - callback.done(object, e) is called when the fetch
+                completes.
         </DL>
     </DD>
 </DL>
@@ -2719,7 +2737,8 @@ public static void <B>saveAll</B>(<A target="_top"
                                      HREF="http://developer.android.com/reference/java/util/List.html?is-external=true"
                                      title="class or interface in java.util">List</A>&lt;<A
         HREF="../../com/parse/ParseObject.html" title="class in com.parse">ParseObject</A>&gt;&nbsp;objects)
-                    throws <A HREF="../../com/parse/ParseException.html" title="class in com.parse">ParseException</A></PRE>
+                    throws <A HREF="../../com/parse/ParseException.html"
+                              title="class in com.parse">ParseException</A></PRE>
 <DL>
     <DD>Saves each object in the provided list. This is faster than saving each object individually
         because it batches the requests.
@@ -2786,7 +2805,8 @@ public static &lt;T extends <A HREF="../../com/parse/ParseObject.html" title="cl
         <DL>
             <DT><B>Parameters:</B>
             <DD><CODE>objects</CODE> - The list of objects to fetch.
-            <DD><CODE>callback</CODE> - callback.done(result, e) is called when the fetch completes.
+            <DD><CODE>callback</CODE> - callback.done(result, e) is called when the fetch
+                completes.
         </DL>
     </DD>
 </DL>
@@ -2842,7 +2862,8 @@ public static &lt;T extends <A HREF="../../com/parse/ParseObject.html" title="cl
         <DL>
             <DT><B>Parameters:</B>
             <DD><CODE>objects</CODE> - The list of objects to fetch.
-            <DD><CODE>callback</CODE> - callback.done(result, e) is called when the fetch completes.
+            <DD><CODE>callback</CODE> - callback.done(result, e) is called when the fetch
+                completes.
         </DL>
     </DD>
 </DL>
@@ -3278,8 +3299,8 @@ public &lt;T&gt; <A target="_top"
                     <DT><B>Parameters:</B>
                     <DD><CODE>key</CODE> - The key to access the value for
                     <DT><B>Returns:</B>
-                    <DD>Returns null if there is no such key or if the value can't be converted to a
-                        List
+                    <DD>Returns null if there is no such key or if the value can't be converted to
+                        a List
                 </DL>
             </DD>
 </DL>
@@ -3466,8 +3487,7 @@ public <A HREF="../../com/parse/ParseObject.html" title="class in com.parse">Par
                 HREF="../../com/parse/ParseQuery.html#include(java.lang.String)"><CODE>ParseQuery.include(String)</CODE></A>
         or by calling
         <A HREF="../../com/parse/ParseObject.html#fetchIfNeeded()"><CODE>ParseObject.fetchIfNeeded()</CODE></A>
-        or
-        <A HREF="../../com/parse/ParseObject.html#refresh()"><CODE>ParseObject.refresh()</CODE></A>),
+        or <A HREF="../../com/parse/ParseObject.html#refresh()"><CODE>ParseObject.refresh()</CODE></A>),
         <A HREF="../../com/parse/ParseObject.html#isDataAvailable()"><CODE>ParseObject.isDataAvailable()</CODE></A>
         will return false.
         <P>
@@ -3497,8 +3517,7 @@ public <A HREF="../../com/parse/ParseUser.html" title="class in com.parse">Parse
                 HREF="../../com/parse/ParseQuery.html#include(java.lang.String)"><CODE>ParseQuery.include(String)</CODE></A>
         or by calling
         <A HREF="../../com/parse/ParseObject.html#fetchIfNeeded()"><CODE>ParseObject.fetchIfNeeded()</CODE></A>
-        or
-        <A HREF="../../com/parse/ParseObject.html#refresh()"><CODE>ParseObject.refresh()</CODE></A>),
+        or <A HREF="../../com/parse/ParseObject.html#refresh()"><CODE>ParseObject.refresh()</CODE></A>),
         <A HREF="../../com/parse/ParseObject.html#isDataAvailable()"><CODE>ParseObject.isDataAvailable()</CODE></A>
         will return false.
         <P>
@@ -3545,10 +3564,10 @@ public <A HREF="../../com/parse/ParseFile.html" title="class in com.parse">Parse
 <H3>
     getParseGeoPoint</H3>
 <PRE>
-public <A HREF="../../com/parse/ParseGeoPoint.html" title="class in com.parse">ParseGeoPoint</A> <B>getParseGeoPoint</B>(<A
-        target="_top"
-        HREF="http://developer.android.com/reference/java/lang/String.html?is-external=true"
-        title="class or interface in java.lang">String</A>&nbsp;key)</PRE>
+public <A HREF="../../com/parse/ParseGeoPoint.html"
+          title="class in com.parse">ParseGeoPoint</A> <B>getParseGeoPoint</B>(<A target="_top"
+                                                                                  HREF="http://developer.android.com/reference/java/lang/String.html?is-external=true"
+                                                                                  title="class or interface in java.lang">String</A>&nbsp;key)</PRE>
 <DL>
     <DD>Access a ParseGeoPoint value.
         <P>
@@ -3568,7 +3587,8 @@ public <A HREF="../../com/parse/ParseGeoPoint.html" title="class in com.parse">P
 <H3>
     getACL</H3>
 <PRE>
-public <A HREF="../../com/parse/ParseACL.html" title="class in com.parse">ParseACL</A> <B>getACL</B>()</PRE>
+public <A HREF="../../com/parse/ParseACL.html"
+          title="class in com.parse">ParseACL</A> <B>getACL</B>()</PRE>
 <DL>
     <DD>Access the ParseACL governing this object.
         <P>
@@ -3608,7 +3628,8 @@ public boolean <B>isDataAvailable</B>()</PRE>
         <DL>
 
             <DT><B>Returns:</B>
-            <DD><code>true</code> if the ParseObject is new or has been fetched or refreshed. <code>false</code>
+            <DD><code>true</code> if the ParseObject is new or has been fetched or refreshed.
+                <code>false</code>
                 otherwise.
         </DL>
     </DD>
@@ -3979,8 +4000,9 @@ public static &lt;T extends <A HREF="../../com/parse/ParseObject.html" title="cl
             <DT><B>Throws:</B>
             <DD><CODE><A HREF="../../com/parse/ParseException.html" title="class in com.parse">ParseException</A></CODE>
             <DT><B>See Also:</B>
-            <DD><A HREF="../../com/parse/ParseObject.html#pinAll(java.lang.String, java.util.List)"><CODE>ParseObject.pinAll(String,
-                java.util.List)</CODE></A>
+            <DD>
+                <A HREF="../../com/parse/ParseObject.html#pinAll(java.lang.String, java.util.List)"><CODE>ParseObject.pinAll(String,
+                    java.util.List)</CODE></A>
         </DL>
     </DD>
 </DL>
@@ -4032,7 +4054,8 @@ public static &lt;T extends <A HREF="../../com/parse/ParseObject.html" title="cl
             <DT><B>Parameters:</B>
             <DD><CODE>objects</CODE> - the objects
             <DT><B>See Also:</B>
-            <DD><A HREF="../../com/parse/ParseObject.html#pinAllInBackground(java.util.List)"><CODE>ParseObject.pinAllInBackground(java.util.List)</CODE></A>,
+            <DD>
+                <A HREF="../../com/parse/ParseObject.html#pinAllInBackground(java.util.List)"><CODE>ParseObject.pinAllInBackground(java.util.List)</CODE></A>,
                 <A HREF="../../com/parse/ParseObject.html#DEFAULT_PIN"><CODE>ParseObject.DEFAULT_PIN</CODE></A>
         </DL>
     </DD>
@@ -4086,8 +4109,9 @@ public static void <B>unpinAllInBackground</B>(<A target="_top"
             <DD><CODE>name</CODE> - the name
             <DD><CODE>callback</CODE> - the callback
             <DT><B>See Also:</B>
-            <DD><A HREF="../../com/parse/ParseObject.html#pinAll(java.lang.String, java.util.List)"><CODE>ParseObject.pinAll(String,
-                java.util.List)</CODE></A>
+            <DD>
+                <A HREF="../../com/parse/ParseObject.html#pinAll(java.lang.String, java.util.List)"><CODE>ParseObject.pinAll(String,
+                    java.util.List)</CODE></A>
         </DL>
     </DD>
 </DL>
@@ -4109,8 +4133,9 @@ public static void <B>unpinAllInBackground</B>(<A target="_top"
             <DT><B>Parameters:</B>
             <DD><CODE>name</CODE> - the name
             <DT><B>See Also:</B>
-            <DD><A HREF="../../com/parse/ParseObject.html#pinAll(java.lang.String, java.util.List)"><CODE>ParseObject.pinAll(String,
-                java.util.List)</CODE></A>
+            <DD>
+                <A HREF="../../com/parse/ParseObject.html#pinAll(java.lang.String, java.util.List)"><CODE>ParseObject.pinAll(String,
+                    java.util.List)</CODE></A>
         </DL>
     </DD>
 </DL>
@@ -4136,8 +4161,9 @@ public static void <B>unpinAll</B>(<A target="_top"
             <DT><B>Throws:</B>
             <DD><CODE><A HREF="../../com/parse/ParseException.html" title="class in com.parse">ParseException</A></CODE>
             <DT><B>See Also:</B>
-            <DD><A HREF="../../com/parse/ParseObject.html#pinAll(java.lang.String, java.util.List)"><CODE>ParseObject.pinAll(String,
-                java.util.List)</CODE></A>
+            <DD>
+                <A HREF="../../com/parse/ParseObject.html#pinAll(java.lang.String, java.util.List)"><CODE>ParseObject.pinAll(String,
+                    java.util.List)</CODE></A>
         </DL>
     </DD>
 </DL>
@@ -4241,7 +4267,8 @@ public void <B>fetchFromLocalDatastore</B>()
                                        title="class in com.parse">ParseException</A></PRE>
 <DL>
     <DD>Loads data from the local datastore into this object, if it has not been fetched from the
-        server already. If the object is not stored in the local datastore, this method with throw a
+        server already. If the object is not stored in the local datastore, this method with throw
+        a
         CACHE_MISS exception.
         <P>
     <DD>
@@ -4442,8 +4469,7 @@ public void <B>unpinInBackground</B>(<A HREF="../../com/parse/DeleteCallback.htm
             <DT><B>Parameters:</B>
             <DD><CODE>callback</CODE> - the callback
             <DT><B>See Also:</B>
-            <DD>
-                <A HREF="../../com/parse/ParseObject.html#pinInBackground(com.parse.SaveCallback)"><CODE>ParseObject.pinInBackground(SaveCallback)</CODE></A>,
+            <DD><A HREF="../../com/parse/ParseObject.html#pinInBackground(com.parse.SaveCallback)"><CODE>ParseObject.pinInBackground(SaveCallback)</CODE></A>,
                 <A HREF="../../com/parse/ParseObject.html#DEFAULT_PIN"><CODE>ParseObject.DEFAULT_PIN</CODE></A>
         </DL>
     </DD>
@@ -4489,14 +4515,12 @@ public void <B>unpin</B>()
                             CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT
                             CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
-                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="class-use/ParseObject.html"><FONT
+                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="class-use/ParseObject.html"><FONT
                             CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="package-tree.html"><FONT
                             CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
-                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A
-                            HREF="../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;
-                    </TD>
+                    <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../deprecated-list.html"><FONT
+                            CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../index-all.html"><FONT
                             CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
                     <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><A HREF="../../help-doc.html"><FONT
@@ -4521,12 +4545,11 @@ public void <B>unpin</B>()
             &nbsp;<A HREF="ParseObject.html" target="_top"><B>NO FRAMES</B></A> &nbsp;
             &nbsp;
             <SCRIPT type="text/javascript">
-  <!--
-  if(window==top) {
-    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
-  }
-  //-->
-
+                <!--
+                if (window == top) {
+                    document.writeln('<A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>');
+                }
+                //-->
             </SCRIPT>
             <NOSCRIPT>
                 <A HREF="../../allclasses-noframe.html"><B>All Classes</B></A>

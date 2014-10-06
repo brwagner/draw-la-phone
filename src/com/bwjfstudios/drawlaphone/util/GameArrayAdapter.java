@@ -17,26 +17,28 @@ import java.util.ArrayList;
  */
 public class GameArrayAdapter extends ArrayAdapter<ParseObject> {
 
-    public GameArrayAdapter(Context context, ArrayList<ParseObject> games) {
-        super(context, R.layout.game_item, games);
+  public GameArrayAdapter(Context context, ArrayList<ParseObject> games) {
+    super(context, R.layout.game_item, games);
+  }
+
+  @Override
+  public View getView(int position, View convertView, ViewGroup parent) {
+    // Get the game
+    if (convertView == null) {
+      convertView = LayoutInflater.from(getContext()).inflate(R.layout.game_item, parent, false);
     }
+    ParseObject game = getItem(position);
 
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        // Get the game
-        if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.game_item, parent, false);
-        }
-        ParseObject game = getItem(position);
+    // Display the name
+    TextView nameView = (TextView) convertView.findViewById(R.id.game_item_name);
+    nameView.setText(game.getString("name"));
 
-        // Display the name
-        TextView nameView = (TextView) convertView.findViewById(R.id.game_item_name);
-        nameView.setText(game.getString("name"));
+    // Display the number of players and the player who is up
+    TextView capacityView = (TextView) convertView.findViewById(R.id.game_item_data);
+    capacityView.setText(String.valueOf(game.getInt("currentNumPlayers")) + "/" + String.valueOf(
+        game.getInt("maxPlayers") + " players | " + game.getString("currentPlayerName")
+        + "'s move"));
 
-        // Display the number of players and the player who is up
-        TextView capacityView = (TextView) convertView.findViewById(R.id.game_item_data);
-        capacityView.setText(String.valueOf(game.getInt("currentNumPlayers")) + "/" + String.valueOf(game.getInt("maxPlayers") + " players | " + game.getString("currentPlayerName") + "'s move"));
-
-        return convertView;
-    }
+    return convertView;
+  }
 }
